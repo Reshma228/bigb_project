@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order success</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="ordersuccessnav">
+<div class="ordersuccesimag"><img src="./images/correctt.png" alt=""></div>
+<div class="ordersuccessthanks">Thanks for your Order</div>
+<div class="ordersuccessdet">Your order has been placed succesfully. Check the Details</div>
+    </nav>
+    <section class="ordersuccesssec">
+<div class="ordersuccessdetails">
+<h3 style="text-align: center;margin-top:15px;font-size:23px">Order Details</h3>
+<div class="ordersuccessinner">
+    <div><b>Name : </b> <span class="namespan"></span></div>
+<div><b>Contact no : </b><span class="contactnospan"></span></div>
+<div class="orderdivaddrees"><b>Address :</b><span class="addressspan"></span></div>
+<div><b>Delivery slot : </b><span class="deliveryslotspan"></span></div>
+<div><b>Amount :</b><span class="amountspan"></span></div>
+<div><b>Payment mode :</b><span class="paymentmodespan"></span></div>
+
+</div>
+
+<div class="backbuttonhome"><button onclick="backtohome()">Back to home</button></div>
+</div>
+    </section>
+    <script>
+let namespan=document.querySelector(".namespan")
+let contactnospan=document.querySelector(".contactnospan")
+let addressspan=document.querySelector(".addressspan")
+let deliveryslotspan=document.querySelector(".deliveryslotspan")
+let amountspan=document.querySelector(".amountspan")
+ let paymentmodespan=document.querySelector(".paymentmodespan")
+var total=JSON.parse(localStorage.getItem("totalprice"))
+var paymode=localStorage.getItem("paymentmode")
+var addreessdetails=JSON.parse(localStorage.getItem("addreessdetails"))
+var selecteddataaa=JSON.parse(localStorage.getItem("selecteddataa"))
+namespan.innerHTML=`${addreessdetails.fname} ${addreessdetails.lname}`
+amountspan.innerHTML=`₹ ${total}`
+contactnospan.innerHTML=`${addreessdetails.detnumm}`
+paymentmodespan.innerHTML=`${paymode}`
+deliveryslotspan.innerHTML=`${selecteddataaa.date} , ${selecteddataaa.time}`
+addressspan.innerHTML=`${addreessdetails.h_no},${addreessdetails.areaa},${addreessdetails.streetdetail}`
+
+
+
+
+const backtohome=()=>{
+    localStorage.removeItem("cart")
+    location.assign("./home.html")
+}
+    </script>
+</body>
+</html>

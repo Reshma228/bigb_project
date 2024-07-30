@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>items</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+
+    <nav class="shadow">
+        <nav class="nav1">
+            <div class="log"><img src="./images/logo.jpeg" onclick="homepage()" style="cursor: pointer;"></div>
+            <div class="sear"><span class="material-symbols-outlined">
+                search
+                </span><input type="search" placeholder="search for products" class="search"><button class="st">search</button></div>
+            <div class="more">
+                <button class="location"></button>
+                    <button class="cart"><span class="material-symbols-outlined">
+                        shopping_bag
+                        </span>
+                    <div class="qu">0</div>
+                    </button>
+                    <div class="cart-box">
+                        <h3>Cart</h3>
+                           <ul class="producList"></ul>
+                           <div class="cartbuynowbutton">
+                            <button class="buynowbutt" onclick="cartitems()">Buy now</button>
+                            <div class=" checkout">
+                                <div class="total">
+                                    <small>subtotal (0 items) </small>0
+                                </div>
+                                <div class="clos">close</div>
+                               </div>
+                           </div>
+                            </div>
+    
+                <button class="profile" >
+                    <i class="fa-solid fa-user"></i>
+                    <div class="profboxnone">
+                        <div class="prof-box">
+                            <div>
+                                <span class="material-symbols-outlined">
+                            account_circle
+                            </span>My Account</div>
+                            
+                        <div><span class="material-symbols-outlined">
+                            bookmark
+                            </span> Whishlist</div>
+                        <div onclick="logout()"><span class="material-symbols-outlined">
+                            logout
+                            </span> Logout</div></div>
+                    </div>
+                    
+                </button>
+               
+            </div>
+        </nav>
+    
+    <nav class="nav2">
+      
+    
+    <button class="category" onclick="catclick()">
+        Shop By category 
+        <span class="material-symbols-outlined arr">
+        arrow_drop_down
+        </span>
+    
+        <!-- i have created boxdiv classname of category list for display none inside this catcl is the main div-->
+    <div class="category-list">
+    
+    
+    <div class="catcl">
+        <div class="libox1 lifbox">
+    
+            <span>Fruits & vegitables</span>
+            <span>Foodgrains,Oil & Masala</span>
+            <span>Bakery,Cakes & Dairy</span>
+            <span> Beverages</span>
+            <span>Snacks & Branded Foods</span>
+            <span>Beauty & Hygiene</span>
+            <span>Cleaning & household</span>
+            <span>Kitchen, Garden & Pets</span>
+            <span>Lunch Boxes & Bags</span>
+            <span>Eggs,Meat& Fish</span>
+            
+            <span>Gourmet & World Food</span>
+            <span>Baby Care</span>
+            <span>
+            Pean Corner
+            </span>
+            
+            
+            </div>
+            <div class="libox1 lifbox1">
+            <span>Cuts & Sprouts</span>
+            <span>Exotic Fruits &veggies</span>
+            <span>Flower Bouquets, Bunches</span>
+            <span>Fresh Fruits</span>
+            <span>Fresh Vegitables</span>
+            <span>Herbs & Seasonings</span>
+            <span>Organic Fuits & Vegitables</span>
+            
+            
+            </div>
+            <div class="libox1 lifbox2">
+                <span>Organic Fruits</span>
+                <span>Organic Vegitables</span>
+            </div>
+            </div>
+    </div>
+    </button>
+     <!-- i have created a div of class name nav2-but for buttons i this div there are four buttons and one div class name called dou -->
+        
+    <div class="nav2-but">
+        <button class="under pushi" value="exotic fruits" >Exotic Fruits & V...</button>
+        <button class="under tea" onclick="search('tea')" >Tea</button>
+        <button class="under" onclick="search('ghee')">Ghee</button>
+        <button class="under" onclick="search('nandini')">Nandini</button>
+    
+    
+        <!-- i dou class name div have again two buttons -->
+    
+        <div class="dou" >
+            <button class="under" onclick="search('vegitables')">Fresh Vegitables </button>
+            <button>>></button>
+        </div>
+    </div>
+    
+    <div class="ext">
+        <img src="./images/smar.webp" alt="">
+        <img src="./images/smar1.png" alt="">
+    </div>
+    </nav>
+      </nav>
+    
+   
+<div class="home">
+<button class="ho-but" onclick="homepage()"><span class="material-symbols-outlined">
+    home
+    </span>Home</button>
+
+</div>
+<div class="differ">
+
+</div>
+    <section class="twoBox">
+<div class="twobox-1"></div>
+<div class="twobox-2"></div>
+    </section>
+    <footer>
+        <div class="fb1">
+    
+            <div class="fb1box">
+               <h4> Bigbasket</h4>
+    <span>About Us                 </span>
+    <span>Become A bigbasket Rider</span>
+    <span>In News</span>
+    <span>Green bigbasket</span>
+    <span>Privacy Policy</span>
+    <span>Affiliate</span>
+    <span>Terms and Conditions</span>
+    <span>Careers At bigbasket</span>
+    <span>bb Instant</span>
+    <span>bb Daily</span>
+    <span>bb Blog</span>
+    <span>bbnow</span>
+            </div>
+            <div class="fb1box">
+    
+               <h4> Help</h4>
+              <span>  FAQs           </span>
+              <span>  Contact Us</span>
+              <span>  bb Wallet FAQs</span>
+              <span>  bb Wallet T&Cs</span>
+              <span>  Vendor Connect</span>
+    
+            </div>
+            <div class="fb1box">
+            
+            </div>
+        </div>
+        <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+        <div class="fb2">
+            <center><p>Cities We Serve</p></center>
+            <div class="addo">
+                Srirangapatna
+    |
+    Jashpur
+    |
+    North Paravur
+    |
+    Pratapgarh District
+    |
+    Guntakal
+    |
+    Muzaffarnagar District
+    |
+    Meerut District
+    |
+    Ludhiana District
+    |
+    Hooghly District
+    |
+    Gonda District
+    |
+    Fatehgarh Sahib District
+    |
+    Baghpat District
+    |
+    Amroha District
+    |
+    Mahabubnagar
+    |
+    Korba
+    |
+    Varanasi
+    |
+    Kanakapura
+    |
+    Khurai
+    |
+    Raisen
+    |
+    Gondia
+    |
+    Rahatgarh
+    |
+    Bhiwadi
+    |
+    Goa
+    |
+    Bahadurgarh
+    |
+    Raichur
+    |
+    Sindudurg
+    |
+    Sangareddy
+    |
+    Kurnool
+    |
+    Jadcherla
+    |
+    Muzaffarpur
+    |
+    JAGANNATHPRASAD
+    |
+    Hubli
+    |
+    Prakasam
+    |
+    Nalgonda
+    |
+    Karnal
+    |
+    Panipat
+    |
+    Rohtak
+    |
+    Renigunta
+    |
+    Patiala
+    |
+    Trichy
+    |Prakasam District
+    |
+    Haridwar
+    |
+    Vinukonda
+    |
+    Kotagiri
+    |
+    Muthukulathur
+    |
+    Pathapatnam
+    |
+    Haripal
+    |
+    Kodumudi
+    |
+    Sivakasi
+    |
+    Pudukkottai
+    |
+    Narsipatnam
+    |
+    Narasannapeta
+    |
+    Kurupam
+    |
+    Pushpavanam
+    |
+    Chodavaram
+    |
+    Gudalur
+    |
+    Pennadam
+    |
+    Addateegala
+    |
+    Chirala
+    |
+    Yerragonda Palem
+    |
+    Kukanoor
+    |
+    Kushalnagar
+    |
+    Holenarasipur
+    |
+    Madakasira
+    |
+    Kavali
+    |
+    Eedu
+    |
+    Bagalkot
+    |
+    Mahalingpur
+    |
+    Humnabad
+    |
+    Yaragatti
+    |
+    Palani
+    |
+    Chilakaluripet
+    |
+    Chikkamagalur
+    |
+    Narayanpet
+    |
+    Jannaram
+    |
+    Rayaparthi
+    |
+    Panchkula
+    |
+    Metpally
+    |
+    Kodad
+    |
+    Mahadevpur
+    |
+    Rudrangi
+    |
+    Lunglei
+    |
+    Narmetta
+    |
+    Yellareddy
+    |
+    Bhangar
+    |
+    Pattukkottai
+    |
+    Aluva
+    |
+    Kayamkulam
+    |
+    Ezhupunna
+    |
+    Pangodu
+    |
+    Attingal
+    |
+    Edappal
+    |
+    Cherpulassery
+    |
+    chungatra
+    |
+    Koothattukulam
+    |
+    Manjeshwar
+    |
+    Choutuppal
+    |
+    Ladakh
+    |
+    Mananthavadi
+    |
+    Thodupuzha
+    |
+    Kattappana
+    |
+    Vadakara
+    |
+    Kuthuparamba
+    |
+    Sonipat
+    |
+    Thamarassery
+    |
+    Mundakayam
+    |
+    East Kameng
+    |
+    Mogullapally
+    |
+    East Garo Hills
+    |
+    Memari
+    |
+    Bolpur
+    |
+    Bangaon
+    |
+    Habra
+    |
+    Tamluk
+    |
+    Basirhat
+    |
+    Barakar
+    |
+    Chittaranjan
+    |
+    Gohana
+    |
+    Amritsar
+    |
+    West Kameng
+    |
+    West Khasi Hills
+    |
+    West Sikkim
+    |
+    Martur
+    |
+    West Tripura
+    |
+    Allagadda
+    |
+    Kittur
+    |
+    Motebeennura
+    |
+    Haveri
+    |
+    Kalghatgi
+    |
+    Sathupally
+    |
+    Harihara
+    |
+    Gadag
+    |
+    Haliyal
+    |
+    KHALARI-JR
+    |
+    Katol
+    |
+    Kendujhar
+    |
+    KENDRAPARA
+    |
+    Kawardha
+    |
+    Karimganj
+    |
+    Karbi Anglong
+    |
+    Kanker
+    |
+    Khergam
+    |
+    Masrakh
+    |
+    Bakhtiarpur
+    |
+    Hassan
+    |
+    Arambag
+    |
+    Baripada
+    |
+    Soro
+    |
+    Shadnagar
+    |
+    Bhongir
+    |
+    Kazipet
+    |
+    Athani
+    |
+    Vyara
+    |
+    CHHENDIPADA
+    |
+    CHHAPRA
+    |
+    Chatra
+    |
+    Changlang
+    |
+    Howrah
+    |
+    Hooghly
+    |
+    HINJILICUT
+    |
+    CHIKITI
+    |
+    Hosanagar
+    |
+    Malavalli
+    |
+    IMAMGANJ
+    |
+    ILIPUR
+    |
+    Koratagere
+    |
+    Magadi
+    |
+    Madikeri
+    |
+    Dabaspete
+    |
+    South Tripura
+    |
+    SULTANGANJ
+    |
+    South Garo Hills
+    |
+    South Sikkim
+    |
+    SURAJGARHA
+    |
+    Surguja
+    |
+    Sundergarh
+    |
+    Supaul
+    |
+    SWARUPNAGAR
+    |
+    Thoubal
+    |
+    Shorapur
+    |
+    Afzalpur
+    |
+    Chincholi
+    |
+    Dimapur
+    |
+    Jamkhandi
+    |
+    Sullia
+    |
+    Assaigoli
+    |
+    Virajpet
+    |
+    Pandua
+    |
+    Koppal
+    |
+    Jamuria
+    |
+    Khairabad
+    |
+    Byndoor
+    |
+    Vaidpura
+    |
+    Amalapuram
+    |
+    Addanki
+    |
+    Yavatmal
+    |
+    Wardha
+    |
+    Naharlagun
+    |
+    Ranebennur
+    |
+    Shiggaon
+    |
+    Savadatti
+    |
+    Sullurupeta
+    |
+    Makrana
+    |
+    Kuchaman City
+    |
+    Warora
+    |
+    RUNNISAIDPUR
+    |
+    RUNNISAIDPUR
+    |
+    Udham-Singh-Nagar
+    |
+    Nellore
+    |
+    Ambala
+    |
+    Agra
+    |
+    Ramgarh
+    |
+    Sircilla District
+    |
+    South 24 Parganas District
+    |
+    Sultanpur District
+    |
+    Madanpur
+    |
+    Faridabad
+    |
+    Raipur
+    |
+    Saiha
+    |
+    Saharsa
+    |
+    Malur
+    |
+    Hardoi
+    |
+    Darbhanga
+    |
+    Gaya
+    |
+    Motihari
+    |
+    Angul
+    |
+    Chhindwara
+    |
+    Ganjam
+    |
+    Bassi
+    |
+    Hindaun
+    |
+    Lalsot
+    |
+    Karauli
+    |
+    Dausa
+    |
+    Saoner
+    |
+    Gangapur City
+    |
+    Chandrapur
+    |
+    KAMAKHYANAGAR
+    |
+    KALYANI
+    |
+    Kandhamal
+    |
+    Kamrup
+    |
+    Amaravathi
+    |
+    Gwalior
+    |
+    Rajkot
+    |
+    Allahabad
+    |
+    Bareilly
+    |
+    Jodhpur
+    |
+    Palakkad
+    |
+    Palwal
+    |
+    Kalinga Nagar
+    |
+    Chinhat
+    |
+    Ottapidaram
+    |
+    Sriperumbudur
+    |
+    Thuckalay
+    |
+    Mayiladuthurai
+    |
+    Vilathikulam
+    |
+    llikkad|Neyyattinkara|Haripad|Shahabad Markanda|Bhagpat|Srinaga|
+            </div>
+         </div>
+        </div>
+        <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+        <div class="fb3">
+            <div class="fb3-b">
+                <h5>Popular Categories</h5>
+               <span> Sunflower Oils   </span>
+               <span> Milk</span>
+               <span> Organic F&V</span>
+               <span> Floor Cleaners</span>
+               <span> Frozen Veg Food</span>
+            </div>
+            <div class="fb3-b">
+    
+    <span>
+    Wheat Atta</span>
+    <span>
+        Health Drinks
+        </span>
+    <span>
+        Namkeen</span>
+    <span>Other Juices</span>
+    <span>
+        Diapers & Wipes</span>
+                
+            </div>
+            <div class="fb3-b">
+    
+    
+                <span>Ghee</span>
+                <span>Flakes</span>
+                <span>Eggs</span>
+                <span>Leaf vegetables</span>
+            </div>
+            <div class="fb3-b">
+                <h5>Popular Brands</h5>
+                <span>Amul</span>
+                <span>RED BULL</span>
+                <span>Yummiez</span>
+                <span>Beitannia</span>
+                <span>Haldiram's</span>
+            </div>
+            <div class="fb3-b">
+    <span>Nescafe</span>
+    <span>Elite Cake</span>
+    <span>Yera</span>
+    <span>wow! momo</span>
+    <span>Ferrero</span>
+            </div>
+            <div class="fb3-b">
+                <span>MTR</span>
+                <span>Pediasure</span>
+                <span>Yakult</span>
+                <span>Fortune</span>
+                <span>Lays</span>
+            </div>
+        </div>
+        <div class="copy">
+           <p>Powered  by @<b>Reshma Shaik</b></p>
+        </div>
+    </footer>
+  
+
+<!-- <script src="./script.js"></script> -->
+   <script>
+
+
+         // this function is for category box in navbar
+    let catelist=document.querySelector(".category-list")
+    let arr=document.querySelector(".arr")
+
+    var opn=1
+    const catclick=()=>{
+       if(opn==1){
+       catelist.style.display="block"
+       arr.style.transform="rotate(180deg)"
+       opn=0
+       }else{
+           catelist.style.display="none"
+           arr.style.transform="rotate(0deg)"
+           opn=1
+       }
+    }
+
+    //upto here category function
+
+let twobox_2 = document.querySelector(".twobox-2");
+let producLists = document.querySelector(".producList");
+let quantity = document.querySelector(".qu");
+ let total = document.querySelector(".total");
+let url = "http://localhost:3000/";
+let sear = document.querySelector(".search");
+
+// Function to perform search
+const search = async (val) => {
+    try {
+        localStorage.setItem("searvalue", val);
+        const response = await fetch(url + `${val}`); // Adjust the endpoint based on your backend setup
+        const result = await response.json();
+        console.log(result);
+
+        // Store data in localStorage
+        let str = JSON.stringify(result);
+        window.localStorage.setItem("mydata", str);
+
+        // Reload products with search results
+        displayProducts();
+
+        console.log("searched");
+        difff()
+        fru_vegg()
+        packsizess()
+    } catch (error) {
+        console.error('Error during search:', error);
+    }
+};
+
+// Click event listener for the search button
+let st = document.querySelector(".st");
+st.addEventListener("click", () => {
+    search(sear.value);
+});
+
+// Keypress event listener for the input field to trigger search on Enter key press
+sear.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        search(sear.value);
+    }
+});
+
+var locationdata=JSON.parse(localStorage.getItem("latlong"))
+console.log(locationdata)
+let locationbut=document.querySelector(".location")
+console.log(locationbut)
+
+locationbut.innerHTML=`<span class="locationcode">${locationdata.results[0].address_components[8].long_name}</span>
+<span class="locationplace">${locationdata.results[0].address_components[4].long_name},${locationdata.results[0].address_components[6].long_name}</span>
+`
+
+
+var profboxnone = document.querySelector(".profboxnone");
+var profile = document.querySelector(".profile");
+let click = 1;
+
+profile.addEventListener("click", () => {
+    if (click == 1) {
+        profboxnone.style.display = "block";
+        console.log("opened");
+        click = 0;
+    } else {
+        profboxnone.style.display = "none";
+        console.log("closed");
+        click = 1;
+    }
+});
+const cartitems=()=>{
+    window.location.assign("./cartitemsshowing.html")
+}
+
+const homepage = () => {
+    location.assign("./home.html");
+};
+
+// Function to fetch data and display products
+function displayProducts() {
+    let g = JSON.parse(localStorage.getItem("mydata")) || [];
+    console.log(g);
+    console.log(g[0].data);
+    twobox_2.innerHTML = ""; // Clear previous products
+
+    g[0].data.forEach((item, key) => {
+        let twodiv = document.createElement("div");
+        twodiv.setAttribute("class", "two-div");
+
+        let twodivimagg = document.createElement("img");
+        twodivimagg.classList.add("two-img");
+        twodivimagg.setAttribute("src", item.image);
+        twodiv.appendChild(twodivimagg);
+
+        twodivimagg.addEventListener("click", () => {
+            localStorage.setItem("singleitem", JSON.stringify(item));
+           location.assign("./itemdetailspage.html");
+            randomdata();
+            console.log(item);
+        });
+
+        let two_name = document.createElement("div");
+        two_name.innerHTML = item.title;
+        two_name.classList.add("two-name");
+
+        let two_sel = document.createElement("div");
+        two_sel.innerHTML = `<select><option>500 g</option></select>
+            <span class="two-price">₹ ${item.price}</span>`;
+        two_sel.classList.add("two-sel");
+
+        let two_butt = document.createElement("div");
+        two_butt.setAttribute("class", "two-butt");
+
+        let two_but1 = document.createElement("button");
+        two_but1.innerHTML = `<span class="material-symbols-outlined"> bookmark</span>`;
+        two_but1.setAttribute("class", "two-but1");
+
+        let two_but2 = document.createElement("button");
+        two_but2.setAttribute("class", "two-but2");
+
+        let span11 = document.createElement("span");
+        span11.setAttribute("class", "dec");
+        span11.innerHTML = "-";
+
+        let span12 = document.createElement("span");
+        span12.setAttribute("class", "values");
+        span12.setAttribute("onclick", `addToCart(${key})`);
+        span12.innerHTML = "Add To Cart";
+
+        let span13 = document.createElement("span");
+        span13.setAttribute("class", "inc");
+        span13.innerHTML = "+";
+
+        two_but2.appendChild(span11);
+        two_but2.appendChild(span12);
+        two_but2.appendChild(span13);
+
+        two_butt.appendChild(two_but1);
+        two_butt.appendChild(two_but2);
+
+        twodiv.appendChild(two_name);
+        twodiv.appendChild(two_sel);
+        twodiv.appendChild(two_butt);
+
+        twobox_2.appendChild(twodiv);
+        
+    });
+}
+displayProducts();
+// Function to add item to cart
+let checkOutList = {};
+function addToCart(id) {
+    let g = JSON.parse(localStorage.getItem("mydata")) || [];
+    let itemToAdd = g[0].data[id];
+    if (!checkOutList[itemToAdd.id]) {
+        checkOutList[itemToAdd.id] = { ...itemToAdd, quantity: 1 };
+    } else {
+        checkOutList[itemToAdd.id].quantity += 1;
+    }
+    saveCartToLocalStorage();
+    reloadCart();
+}
+
+// Function to update cart quantity
+function changeQuantity(id, quantity) {
+    if (quantity === 0) {
+        delete checkOutList[id];
+    } else {
+        checkOutList[id].quantity = quantity;
+    }
+    saveCartToLocalStorage();
+    reloadCart();
+}
+
+// Function to save cart to localStorage
+function saveCartToLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(checkOutList));
+}
+
+// Function to reload cart display
+function reloadCart() {
+    producLists.innerHTML = "";
+    let counts = 0;
+    let totalPrice = 0;
+    Object.values(checkOutList).forEach((item, key) => {
+        counts += item.quantity;
+        totalPrice += parseInt(item.price) * item.quantity;
+        let li7 = document.createElement("li");
+        li7.classList.add("cartli");
+        li7.innerHTML = `
+            <img src="${item.image}">
+            <div>${item.title}</div>
+            <div>${item.price}</div>
+            <div class="cartbuttons">
+                <button onclick="changeQuantity(${key},${item.quantity - 1})">-</button>
+                <div class="counts">${item.quantity}</div>
+                <button onclick="changeQuantity(${key},${item.quantity + 1})">+</button>
+            </div>
+        `;
+        producLists.appendChild(li7);
+    });
+
+    total.innerHTML = `<small>subtotal (${counts} items) </small>` + totalPrice;
+    quantity.innerHTML = counts;
+}
+
+// Event listener for displaying cart modal
+let cart = document.querySelector(".cart");
+let bo = document.querySelector("body");
+cart.addEventListener("click", () => {
+    bo.classList.add("active");
+});
+
+// Event listener for hiding cart modal
+let closee = document.querySelector(".clos");
+closee.addEventListener("click", () => {
+    bo.classList.remove("active");
+});
+
+// Initialize on page load
+window.onload = () => {
+    
+
+    let cartData = localStorage.getItem('cart');
+    if (cartData) {
+        checkOutList = JSON.parse(cartData);
+        reloadCart();
+    }
+    difff()
+    fru_vegg()
+    packsizess()
+};
+
+// Function to generate random data (if needed)
+function randomdata() {
+    var g_data = JSON.parse(localStorage.getItem("mydata"))
+    let fpi = [];
+    let remainingDa = [...g_data[0].data]; 
+
+    for (let i = 0; i < 4 && remainingDa.length>0; i++) {
+        let randomIndex = Math.floor(Math.random() * remainingDa.length);
+        let selectedProduct = remainingDa[randomIndex];
+        fpi.push(selectedProduct);
+        remainingDa.splice(randomIndex, 1);
+    }
+
+    localStorage.setItem("randomdata", JSON.stringify(fpi));
+    console.log(fpi);
+}
+
+
+
+
+
+//anothr
+
+ let two_box1=document.querySelector(".twobox-1")
+console.log(two_box1)
+  two_box1.innerHTML=`<h3 class="cato">Shop by category</h3><div class="f-v"><p>Fruits & Vegitables</p>
+   <div class=f-vlist></div></div><div class="packsize"><div class="psea">Pack Size <span class="material-symbols-outlined">
+        chevron_right
+       </span></div>
+   <div class="inpdisp"><input type="search"  placeholder="search" class="pseainp" />
+       <div class="pack-list"></div></div>
+   
+   
+   </div>
+   
+   </div>`
+   const fru_vegg=()=>{
+   let gdata=JSON.parse(localStorage.getItem("mydata"))|| {}
+console.log(gdata)
+  let f_vlist=document.querySelector(".f-vlist")
+  f_vlist.innerHTML=""
+  if(gdata[1] && gdata[1].fru_veg){
+
+    gdata[1].fru_veg.forEach((item)=>{
+        let li=document.createElement("li")
+        li.setAttribute("class","lis")
+        li.innerHTML=item.lis
+        f_vlist.appendChild(li)
+    })
+ 
+}
+  }
+  
+  let pack_list=document.querySelector(".pack-list")
+    
+
+
+
+const packsizess=()=>{
+    let gdataaa=JSON.parse(localStorage.getItem("mydata"))|| {}
+    let pack_list = document.querySelector(".pack-list");
+    pack_list.innerHTML = ""; 
+    if (gdataaa[2] && gdataaa[2].pack_size) {
+        gdataaa[2].pack_size.forEach((item) => {
+            let li1 = document.createElement("li");
+            li1.setAttribute("class", "packli");
+            li1.innerHTML = `<input type="checkbox" value="${item.pack}" />${item.pack}`;
+            pack_list.appendChild(li1);
+        });
+    }
+}
+  
+   console.log(pack_list)
+  
+   console.log(two_box1)
+   
+   
+
+    let differ=document.querySelector(".differ")
+
+  function difff(){
+    differ.innerHTML=""
+    let gdata1=JSON.parse(localStorage.getItem("mydata")) || [];
+  gdata1[3].shopBy.forEach((item,key)=>{
+
+
+      let span4=document.createElement("span")
+      span4.innerHTML=`${item.names}`
+      span4.classList.add("span4")
+      console.log(item)
+differ.appendChild(span4)
+
+    })
+    }
+   
+    console.log(differ)
+   // let cartclick=document.querySelector(".cartclick")
+   // console.log(cartclick)
+
+
+
+   
+
+    </script>
+    
+  </body>
+</html>

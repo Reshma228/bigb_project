@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/signup</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="logbody">
+    <section>
+        <div class="container">
+            <div class="signin-signup">
+
+                <form action="" class="sign-in-form" >
+<h2 class="title">Sign in</h2>
+<div class="input-field">
+    <i class="fas fa-user"></i>
+    <input type="text" name="username"placeholder="username" class="log-uname"> 
+</div>
+<div class="input-field">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="passWord" id="" placeholder="password" class="log-pass">
+</div>
+<input type="submit" name="" value="login" class="btn logbut">
+<p class="social-text">Or sign in with social platform  </p>
+<div class="social-media">
+<div class="social-icon">
+    <i class="fab fa-facebook"></i>
+</div>
+<div class="social-icon">
+    <i class="fab fa-twitter"></i>
+</div>
+<div class="social-icon">
+    <i class="fab fa-google"></i>
+</div>
+</div>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" placeholder="username" class="same sign-uname">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" name="email" placeholder="email" class="same sign-email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" name="password"  placeholder="password" class="same sign-pass">
+                    </div>
+                    <input type="submit" name=""  value="signup" class="btn signbut" >
+                    <p class="social-text">Or sign in with social platform  </p>
+                    <div class="social-media">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    </div>
+                                    </form>
+            </div>
+
+
+            <!--in  panels-container there is two divs  -->
+
+            <div class="panels-container">
+               
+                <!-- 1st div  panel left-panel-->
+
+                <div class="panel left-panel">
+
+                    <!-- there is one div in panel left-panel class content -->
+
+                    <div class="content">
+                        <h3>Sign in</h3>
+                       <p>If You Have Already Account Place Click Below Button To Login Page  </p>
+                        <button class="btn" id="sign-in-btn" >sign in</button>
+                    </div>
+                </div>
+
+                <!-- 2nd div panel right-panel -->
+
+                <div class="panel right-panel">
+                    <!-- in panel right-panel there is one div class content -->
+                    <div class="content">
+                        <h3>Sign Up</h3>
+                        <p> If you Don't have Account Please Click the Below Button To Register</p>
+                        <button class="btn" id="sign-up-btn">sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+
+        //i have called the all buttons in my document
+
+        const sign_in_btn=document.querySelector("#sign-in-btn")//panel left side button
+        const sign_up_btn=document.querySelector("#sign-up-btn")//panel right side button
+        const container=document.querySelector(".container")//main container 
+        let left_panel=document.querySelector(".left-panel .content")// i have called child div of left panel
+
+
+
+        // by clicking the sig_up_btn adding class attribute to the container
+        sign_up_btn.addEventListener("click",()=>{
+            container.classList.add("sign-up-mode");
+        
+        })
+
+         // by clicking the sig_in_btn removing class attribute to the container
+        sign_in_btn.addEventListener("click",()=>{
+            container.classList.remove("sign-up-mode");
+        })
+
+
+
+
+        let same=document.querySelector(".same")
+
+// this is for data getting form the forms
+// this for signup
+        let sign_uname=document.querySelector(".sign-uname")
+        let sign_email=document.querySelector(".sign-email")
+        let sign_pass=document.querySelector(".sign-pass")
+        let signbut=document.querySelector(".signbut")
+
+
+       
+
+                    
+                    signbut.addEventListener("click",(e)=>{
+                        e.preventDefault()
+                        if(same.value==""){
+                            alert("please fill the details")
+                        }else{
+                            //we are storing the input values to one variable by creating object
+                            var signdet={
+                                uName:sign_uname.value,
+                                email:sign_email.value,
+                                pass:sign_pass.value
+                            }
+                            //we are sending data variable to function as a argument
+                           datastore(signdet)
+localStorage.setItem("signdett",JSON.stringify(signdet))
+                            alert("Register Successful")
+                            sign_uname=""
+                            sign_email=""
+                            sign_pass=""
+                        }
+                    })
+
+
+
+                    const datastore= async (a)=>{
+                        await fetch("http://localhost:3000/userData",{
+                        method:"POST",
+                        body:JSON.stringify(a),
+                        headers:{
+                          "content-Type":"application/json"
+                        }
+                                })
+                        
+                                }
+
+//uptohere signup
+
+
+// this is for login form
+
+
+        let logbut=document.querySelector(".logbut")
+        let log_uname=document.querySelector(".log-uname")
+        let log_pass=document.querySelector(".log-pass")
+
+        //upto here
+
+
+      let set=JSON.parse(localStorage.getItem("signdett"))
+      console.log(set)
+
+
+      logbut.addEventListener("click",(e)=>{
+        e.preventDefault()
+
+        if(set.uName===log_uname.value && set.pass===log_pass.value){
+            
+            alert("login successful")
+         
+        window.location.assign("./home.html")
+           
+        }else{
+            alert("incorrect credentials")
+        }
+    
+    
+      })
+     
+      
+
+
+     
+//const dataget=async (e)=>{
+//
+//    e.preventDefault()
+//    const res= await fetch("http://localhost:3000/userData")
+//    const rea1= await res.json()
+//   console.log(rea1)
+//
+//
+//}
+
+
+
+    </script>
+</body>
+</html>

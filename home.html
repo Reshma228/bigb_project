@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigbasket </title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <nav class="shadow">
+    <nav class="nav1">
+        <div class="log"><img src="./images/logo.jpeg" style="cursor: pointer;"></div>
+        <div class="sear"><span class="material-symbols-outlined">
+            search
+            </span><input type="search" placeholder="search for products" class="search"><button class="st">search</button></div>
+        <div class="more">
+            <button class="location" >
+                <!-- <span class="material-symbols-outlined">
+                explore
+                </span><p>Select Location</p> -->
+            
+            </button>
+                <button class="cart"><span class="material-symbols-outlined">
+                    shopping_bag
+                    </span>
+                <div class="qu">0</div>
+                </button>
+                <div class="cart-box">
+                    <h3>Cart</h3>
+                       <ul class="producList"></ul>
+                       <div class="cartbuynowbutton">
+                        <button class="buynowbutt" onclick="cartitems()">Buy now</button>
+                        <div class=" checkout">
+                            <div class="total">
+                                <small>subtotal (0 items) </small>0
+                            </div>
+                            <div class="clos">close</div>
+                           </div>
+                       </div>
+                     
+                        </div>
+
+            <button class="profile" >
+                <div class="profboxnone">
+                    <div class="prof-box">
+                        <div>
+                            <span class="material-symbols-outlined">
+                        account_circle
+                        </span>My Account</div>
+                        
+                    <div><span class="material-symbols-outlined">
+                        bookmark
+                        </span> Whishlist</div>
+                    <div onclick="logout()"><span class="material-symbols-outlined">
+                        logout
+                        </span> Logout</div></div>
+                </div>
+                <i class="fa-solid fa-user"></i>
+              
+                
+            </button>
+           
+        </div>
+    </nav>
+
+<nav class="nav2">
+  
+
+<button class="category" onclick="catclick()">
+    Shop By category 
+    <span class="material-symbols-outlined arr">
+    arrow_drop_down
+    </span>
+
+    <!-- i have created boxdiv classname of category list for display none inside this catcl is the main div-->
+<div class="category-list">
+
+
+<div class="catcl">
+    <div class="libox1 lifbox">
+
+        <span>Fruits & vegitables</span>
+        <span>Foodgrains,Oil & Masala</span>
+        <span>Bakery,Cakes & Dairy</span>
+        <span> Beverages</span>
+        <span>Snacks & Branded Foods</span>
+        <span>Beauty & Hygiene</span>
+        <span>Cleaning & household</span>
+        <span>Kitchen, Garden & Pets</span>
+        <span>Lunch Boxes & Bags</span>
+        <span>Eggs,Meat& Fish</span>
+        
+        <span>Gourmet & World Food</span>
+        <span>Baby Care</span>
+        <span>
+        Pean Corner
+        </span>
+        
+        
+        </div>
+        <div class="libox1 lifbox1">
+        <span>Cuts & Sprouts</span>
+        <span>Exotic Fruits &veggies</span>
+        <span>Flower Bouquets, Bunches</span>
+        <span>Fresh Fruits</span>
+        <span>Fresh Vegitables</span>
+        <span>Herbs & Seasonings</span>
+        <span>Organic Fuits & Vegitables</span>
+        
+        
+        </div>
+        <div class="libox1 lifbox2">
+            <span>Organic Fruits</span>
+            <span>Organic Vegitables</span>
+        </div>
+        </div>
+</div>
+</button>
+ <!-- i have created a div of class name nav2-but for buttons i this div there are four buttons and one div class name called dou -->
+    
+<div class="nav2-but">
+    <button class="under pushi" value="exotic fruits" >Exotic Fruits & V...</button>
+    <button class="under tea" onclick="search('tea')" >Tea</button>
+    <button class="under" onclick="search('ghee')">Ghee</button>
+    <button class="under" onclick="search('nandini')">Nandini</button>
+
+
+    <!-- i dou class name div have again two buttons -->
+
+    <div class="dou" >
+        <button class="under" onclick="search('vegitables')">Fresh Vegitables </button>
+        <button>>></button>
+    </div>
+</div>
+
+<div class="ext">
+    <img src="./images/smar.webp" alt="">
+    <img src="./images/smar1.png" alt="">
+</div>
+</nav>
+  </nav>
+
+<nav class="nav3">
+    
+    <img src="./images/1.webp" alt="jsn">
+    <img src="./images/2.webp" alt="">
+    <img src="./images/3.webp" alt="">
+    <img src="./images/4.webp" alt="">
+    <img src="./images/5.webp" alt="">
+    <img src="./images/6.webp" alt="">
+
+
+</nav>
+
+<!-- i have created a one section with class name main-sec  -->
+ <!-- i this section there are 12 div -->
+
+<section class="main-sec">
+    <!-- mysmartbox(div) is the first box in these box there are two div one is arrow div and another is veglist div -->
+<div class="mysmart-box">
+<!-- in arrow div there is one head tag and another div with class name arrow-b in this arrow b there are two buttons-->
+<div class="arrow">
+    <h3>My smart basket</h3>
+    <div class="arrow-b">
+        <button class="leftbut1"><</button><button class="rightbut1">></button>
+    </div>
+</div>
+
+
+<div class="veg-list">
+<!-- in this veglist div i have created elements in script.js and i have appended them  to this dev-->
+</div>
+</div>
+
+<div class="bank">
+    <h3>Bank Offers</h3>
+    <div class="bank-items">
+        <img src="./images/b1.webp" alt="" class="h">
+  <img src="./images/b2.webp" alt="" class="h"><img src="./images/b3.webp" alt="" class="h"><img src="./images/b4.webp" alt="" class="h">
+  
+    </div>
+</div>
+
+<div class="pamp-box">
+
+    <div class="pamp-arrow">
+        <h3>Best Sellers</h3>
+        <div class="arrow-pamp">
+            <button class="leftbut2"><</button><button class="rightbut2">></button>
+        </div>
+    </div>
+    <div class="pamp-list">
+    
+
+    </div>
+    </div>
+
+
+
+
+<div class="topoffer">
+    <h3>Top Offers</h3>
+    <div class="topitems">
+        <img src="./images/t1.webp" alt="" class="h"><img src="./images/t2.webp" alt="" class="h"><img src="./images/t3.webp" alt="" class="h"><img src="./images/t4.webp" alt="" class="h">
+    </div>
+</div>
+<div class="fr-veg">
+    <h3>Fruits and vegitables</h3>
+    <div class="frveg-items">
+        <img src="./images/v1.webp" alt="" class="h"><img src="./images/v2.webp" alt="" class="h"><img src="./images/v3.webp" alt="" class="h"><img src="./images/v4.webp" alt="" class="h">
+    </div>
+</div>
+<div class="daily">
+    <h3>Your Daily Staples</h3>
+    <div class="dail-items">
+        <img src="./images/d1.webp" alt="" class="h"><img src="./images/d2.webp" alt="" class="h"><img src="./images/d3.webp" alt="" class="h"><img src="./images/d4.webp" alt="" class="h"><img src="./images/d5.webp" alt="" class="h"><img src="./images/d6.webp" alt="" class="h">
+    </div>
+</div>
+
+<div class="bever">
+    <h3>Beverages</h3>
+    <div class="beveritems">
+        <img src="./images/be1.webp" alt="" class="h"><img src="./images/be2.webp" alt="" class="h"><img src="./images/be3.webp" alt="" class="h"><img src="./images/be4.webp" alt="" class="h"><img src="./images/be5.webp" alt="" class="h"><img src="./images/be6.webp" alt="" class="h">
+    </div>
+</div>
+<div class="snacks">
+    <h3>Snacks store</h3>
+    <div class="snackitems">
+        <img src="./images/s1.webp" alt="" class="h"><img src="./images/s2.webp" alt="" class="h"><img src="./images/s3.webp" alt="" class="h"><img src="./images/s4.webp" alt="" class="h">
+    </div>
+</div>
+<div class="beauty">
+    <h3>Beauty and Hygiene</h3>
+    <div class="beutyitems">
+        <img src="./images/bea1.webp" alt="" class="h"><img src="./images/bea2.webp" alt="" class="h"><img src="./images/bea3.webp" alt="" class="h"><img src="./images/bea4.webp" alt="" class="h"><img src="./images/bea5.webp" alt="" class="h"><img src="./images/bea6.webp" alt="" class="h">
+    </div>
+</div>
+<div class="homekit">
+    <h3>Home and Kitchen</h3>
+    <div class="homekititems">
+
+        <img src="./images/k1.webp" alt="" class="h">
+        <img src="./images/k2.webp" alt="" class="h">
+        <img src="./images/k3.webp" alt="" class="h">
+        <img src="./images/k4.webp" alt="" class="h">
+        <img src="./images/k5.webp" alt="" class="h">
+        <img src="./images/k6.webp" alt="" class="h">
+    </div>
+</div>
+
+<div class="slide">
+    <button class="leftbut"><</button>
+    <div class="slideitems">
+       <div> <img src="./images/slide1.webp" alt=""></div>
+    <div>    <img src="./images/slide2.webp" alt=""></div>
+       <div> <img src="./images/slide3.webp" alt=""></div>
+       <div> <img src="./images/slide4.webp" alt=""></div>
+    </div>
+    <button class="rightbut">></button>
+</div>
+<div class="info">
+    <span>Bigbasket – online grocery store</span>
+    <p>Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.</p>
+    <p>In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.</p>
+<p>We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time.</p>
+<p>Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule.
+</p>
+<p>Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.</p>
+<p>Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.</p>
+</div>
+
+</section>
+<footer>
+    <div class="fb1">
+
+        <div class="fb1box">
+           <h4> Bigbasket</h4>
+<span>About Us                 </span>
+<span>Become A bigbasket Rider</span>
+<span>In News</span>
+<span>Green bigbasket</span>
+<span>Privacy Policy</span>
+<span>Affiliate</span>
+<span>Terms and Conditions</span>
+<span>Careers At bigbasket</span>
+<span>bb Instant</span>
+<span>bb Daily</span>
+<span>bb Blog</span>
+<span>bbnow</span>
+        </div>
+        <div class="fb1box">
+
+           <h4> Help</h4>
+          <span>  FAQs           </span>
+          <span>  Contact Us</span>
+          <span>  bb Wallet FAQs</span>
+          <span>  bb Wallet T&Cs</span>
+          <span>  Vendor Connect</span>
+
+        </div>
+        <div class="fb1box fotlogimg">
+            <div><img src="./images/tata.png" alt="" width="240" style="margin-top: 30px;"></div>
+            <div class="playapple"><img src="./images/playlog.png" alt="">
+            <img src="./images/appstoelo1.png" alt=""></div>
+            <div class="foticons"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-pinterest-p"></i></div>
+            </div>
+    </div>
+    <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+    <div class="fb2">
+        <center><p>Cities We Serve</p></center>
+        <div class="addo">
+            Srirangapatna
+|
+Jashpur
+|
+North Paravur
+|
+Pratapgarh District
+|
+Guntakal
+|
+Muzaffarnagar District
+|
+Meerut District
+|
+Ludhiana District
+|
+Hooghly District
+|
+Gonda District
+|
+Fatehgarh Sahib District
+|
+Baghpat District
+|
+Amroha District
+|
+Mahabubnagar
+|
+Korba
+|
+Varanasi
+|
+Kanakapura
+|
+Khurai
+|
+Raisen
+|
+Gondia
+|
+Rahatgarh
+|
+Bhiwadi
+|
+Goa
+|
+Bahadurgarh
+|
+Raichur
+|
+Sindudurg
+|
+Sangareddy
+|
+Kurnool
+|
+Jadcherla
+|
+Muzaffarpur
+|
+JAGANNATHPRASAD
+|
+Hubli
+|
+Prakasam
+|
+Nalgonda
+|
+Karnal
+|
+Panipat
+|
+Rohtak
+|
+Renigunta
+|
+Patiala
+|
+Trichy
+|Prakasam District
+|
+Haridwar
+|
+Vinukonda
+|
+Kotagiri
+|
+Muthukulathur
+|
+Pathapatnam
+|
+Haripal
+|
+Kodumudi
+|
+Sivakasi
+|
+Pudukkottai
+|
+Narsipatnam
+|
+Narasannapeta
+|
+Kurupam
+|
+Pushpavanam
+|
+Chodavaram
+|
+Gudalur
+|
+Pennadam
+|
+Addateegala
+|
+Chirala
+|
+Yerragonda Palem
+|
+Kukanoor
+|
+Kushalnagar
+|
+Holenarasipur
+|
+Madakasira
+|
+Kavali
+|
+Eedu
+|
+Bagalkot
+|
+Mahalingpur
+|
+Humnabad
+|
+Yaragatti
+|
+Palani
+|
+Chilakaluripet
+|
+Chikkamagalur
+|
+Narayanpet
+|
+Jannaram
+|
+Rayaparthi
+|
+Panchkula
+|
+Metpally
+|
+Kodad
+|
+Mahadevpur
+|
+Rudrangi
+|
+Lunglei
+|
+Narmetta
+|
+Yellareddy
+|
+Bhangar
+|
+Pattukkottai
+|
+Aluva
+|
+Kayamkulam
+|
+Ezhupunna
+|
+Pangodu
+|
+Attingal
+|
+Edappal
+|
+Cherpulassery
+|
+chungatra
+|
+Koothattukulam
+|
+Manjeshwar
+|
+Choutuppal
+|
+Ladakh
+|
+Mananthavadi
+|
+Thodupuzha
+|
+Kattappana
+|
+Vadakara
+|
+Kuthuparamba
+|
+Sonipat
+|
+Thamarassery
+|
+Mundakayam
+|
+East Kameng
+|
+Mogullapally
+|
+East Garo Hills
+|
+Memari
+|
+Bolpur
+|
+Bangaon
+|
+Habra
+|
+Tamluk
+|
+Basirhat
+|
+Barakar
+|
+Chittaranjan
+|
+Gohana
+|
+Amritsar
+|
+West Kameng
+|
+West Khasi Hills
+|
+West Sikkim
+|
+Martur
+|
+West Tripura
+|
+Allagadda
+|
+Kittur
+|
+Motebeennura
+|
+Haveri
+|
+Kalghatgi
+|
+Sathupally
+|
+Harihara
+|
+Gadag
+|
+Haliyal
+|
+KHALARI-JR
+|
+Katol
+|
+Kendujhar
+|
+KENDRAPARA
+|
+Kawardha
+|
+Karimganj
+|
+Karbi Anglong
+|
+Kanker
+|
+Khergam
+|
+Masrakh
+|
+Bakhtiarpur
+|
+Hassan
+|
+Arambag
+|
+Baripada
+|
+Soro
+|
+Shadnagar
+|
+Bhongir
+|
+Kazipet
+|
+Athani
+|
+Vyara
+|
+CHHENDIPADA
+|
+CHHAPRA
+|
+Chatra
+|
+Changlang
+|
+Howrah
+|
+Hooghly
+|
+HINJILICUT
+|
+CHIKITI
+|
+Hosanagar
+|
+Malavalli
+|
+IMAMGANJ
+|
+ILIPUR
+|
+Koratagere
+|
+Magadi
+|
+Madikeri
+|
+Dabaspete
+|
+South Tripura
+|
+SULTANGANJ
+|
+South Garo Hills
+|
+South Sikkim
+|
+SURAJGARHA
+|
+Surguja
+|
+Sundergarh
+|
+Supaul
+|
+SWARUPNAGAR
+|
+Thoubal
+|
+Shorapur
+|
+Afzalpur
+|
+Chincholi
+|
+Dimapur
+|
+Jamkhandi
+|
+Sullia
+|
+Assaigoli
+|
+Virajpet
+|
+Pandua
+|
+Koppal
+|
+Jamuria
+|
+Khairabad
+|
+Byndoor
+|
+Vaidpura
+|
+Amalapuram
+|
+Addanki
+|
+Yavatmal
+|
+Wardha
+|
+Naharlagun
+|
+Ranebennur
+|
+Shiggaon
+|
+Savadatti
+|
+Sullurupeta
+|
+Makrana
+|
+Kuchaman City
+|
+Warora
+|
+RUNNISAIDPUR
+|
+RUNNISAIDPUR
+|
+Udham-Singh-Nagar
+|
+Nellore
+|
+Ambala
+|
+Agra
+|
+Ramgarh
+|
+Sircilla District
+|
+South 24 Parganas District
+|
+Sultanpur District
+|
+Madanpur
+|
+Faridabad
+|
+Raipur
+|
+Saiha
+|
+Saharsa
+|
+Malur
+|
+Hardoi
+|
+Darbhanga
+|
+Gaya
+|
+Motihari
+|
+Angul
+|
+Chhindwara
+|
+Ganjam
+|
+Bassi
+|
+Hindaun
+|
+Lalsot
+|
+Karauli
+|
+Dausa
+|
+Saoner
+|
+Gangapur City
+|
+Chandrapur
+|
+KAMAKHYANAGAR
+|
+KALYANI
+|
+Kandhamal
+|
+Kamrup
+|
+Amaravathi
+|
+Gwalior
+|
+Rajkot
+|
+Allahabad
+|
+Bareilly
+|
+Jodhpur
+|
+Palakkad
+|
+Palwal
+|
+Kalinga Nagar
+|
+Chinhat
+|
+Ottapidaram
+|
+Sriperumbudur
+|
+Thuckalay
+|
+Mayiladuthurai
+|
+Vilathikulam
+|
+llikkad|Neyyattinkara|Haripad|Shahabad Markanda|Bhagpat|Srinaga|
+        </div>
+     </div>
+    </div>
+    <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+    <div class="fb3">
+        <div class="fb3-b">
+            <h5>Popular Categories</h5>
+           <span> Sunflower Oils   </span>
+           <span> Milk</span>
+           <span> Organic F&V</span>
+           <span> Floor Cleaners</span>
+           <span> Frozen Veg Food</span>
+        </div>
+        <div class="fb3-b">
+
+<span>
+Wheat Atta</span>
+<span>
+    Health Drinks
+    </span>
+<span>
+    Namkeen</span>
+<span>Other Juices</span>
+<span>
+    Diapers & Wipes</span>
+            
+        </div>
+        <div class="fb3-b">
+
+
+            <span>Ghee</span>
+            <span>Flakes</span>
+            <span>Eggs</span>
+            <span>Leaf vegetables</span>
+        </div>
+        <div class="fb3-b">
+            <h5>Popular Brands</h5>
+            <span>Amul</span>
+            <span>RED BULL</span>
+            <span>Yummiez</span>
+            <span>Beitannia</span>
+            <span>Haldiram's</span>
+        </div>
+        <div class="fb3-b">
+<span>Nescafe</span>
+<span>Elite Cake</span>
+<span>Yera</span>
+<span>wow! momo</span>
+<span>Ferrero</span>
+        </div>
+        <div class="fb3-b">
+            <span>MTR</span>
+            <span>Pediasure</span>
+            <span>Yakult</span>
+            <span>Fortune</span>
+            <span>Lays</span>
+        </div>
+    </div>
+    <div class="copy">
+       <p>Powered  by @<b>Reshma Shaik</b></p>
+    </div>
+</footer>
+
+
+
+
+    <script src="./script.js"></script>
+    <script>
+        let veg_l=document.querySelector(".veg-list")
+        let leftbut1=document.querySelector(".leftbut1")
+        let rightbut1=document.querySelector(".rightbut1")
+        veg_l.addEventListener("wheel",(e)=>{
+          e.preventDefault()
+          veg_l.style.scrollBehavior="smooth"
+            veg_l.scrollLeft+=e.deltaY
+        })
+        
+        rightbut1.addEventListener("click",()=>{
+        veg_l.scrollLeft += 1170
+        veg_1.style.scrollBehavior="smooth"
+        })
+        leftbut1.addEventListener("click",()=>{
+            veg_l.scrollLeft -= 1170
+            veg_l.style.scrollBehavior="smooth"
+            })
+
+            let pamp_l=document.querySelector(".pamp-list")
+            let leftbut2=document.querySelector(".leftbut2")
+            let rightbut2=document.querySelector(".rightbut2")
+            pamp_l.addEventListener("wheel",(e)=>{
+              e.preventDefault()
+              pamp_l.style.scrollBehavior="smooth"
+                pamp_l.scrollLeft+=e.deltaY
+            })
+            
+            rightbut2.addEventListener("click",()=>{
+            pamp_l.scrollLeft += 1170
+            pamp_1.style.scrollBehavior="smooth"
+            })
+            leftbut2.addEventListener("click",()=>{
+                pamp_l.scrollLeft -= 1170
+                pamp_l.style.scrollBehavior="smooth"
+                })
+    
+
+
+
+                
+let slideitems=document.querySelector(".slideitems")
+let leftbut=document.querySelector(".leftbut")
+let rightbut=document.querySelector(".rightbut")
+slideitems.addEventListener("wheel",(e)=>{
+    e.preventDefault()
+    slideitems.style.scrollBehavior="smooth"
+    slideitems.scrollLeft+=e.deltaY
+})
+
+rightbut.addEventListener("click",()=>{
+slideitems.style.scrollBehavior="smooth"
+slideitems.scrollLeft += 1170
+})
+leftbut.addEventListener("click",()=>{
+    slideitems.scrollLeft -= 1170
+    slideitems.style.scrollBehavior="smooth"
+    })
+
+
+    let under=document.querySelectorAll(".under")
+for(let re=0;re<under.length;re++){
+
+  
+// under[re].addEventListener(()=>{
+//    //search(under[re].value)
+// })
+
+}
+
+var locationdata=JSON.parse(localStorage.getItem("latlong"))
+console.log(locationdata)
+let locationbut=document.querySelector(".location")
+console.log(locationbut)
+
+locationbut.innerHTML=`<span class="locationcode">${locationdata.results[0].address_components[8].long_name}</span>
+<span class="locationplace">${locationdata.results[0].address_components[4].long_name},${locationdata.results[0].address_components[6].long_name}</span>
+`
+
+
+// Function to handle click event on location button
+//document.querySelector(".location").addEventListener("click", function() {
+//    if (navigator.geolocation) {
+//        // Request current position
+//        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+//    } else {
+//        console.log("Geolocation is not supported by this browser.");
+//    }
+//});
+//
+//// Success callback function
+//function successCallback(position) {
+//    const latitude = position.coords.latitude;
+//    const longitude = position.coords.longitude;
+//    console.log(latitude , longitude)
+//    // Display the coordinates or use them as needed
+//    alert(`Your current location:\nLatitude: ${latitude}\nLongitude: ${longitude}`);
+//}
+//
+//// Error callback function
+//function errorCallback(error) {
+//    switch(error.code) {
+//        case error.PERMISSION_DENIED:
+//            console.log("User denied the request for Geolocation.");
+//            break;
+//        case error.POSITION_UNAVAILABLE:
+//            console.log("Location information is unavailable.");
+//            break;
+//        case error.TIMEOUT:
+//            console.log("The request to get user location timed out.");
+//            break;
+//        case error.UNKNOWN_ERROR:
+//            console.log("An unknown error occurred.");
+//            break;
+//    }
+//}
+
+
+
+
+
+    </script>
+</body>
+</html>

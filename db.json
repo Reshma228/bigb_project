@@ -1,0 +1,1305 @@
+{
+  "vegitables": [
+    {
+      "data": [ 
+       
+        {
+          "id": 0,
+          "image": "./images/capci.webp",
+          "title": "capsicum - Green(Loose)",
+          "price": "105.5",
+          "kgs": "1kg",
+          "category": "vegitables",
+          "type": "fresho!",
+          "packsizes": [
+            {
+              "kgs": "1kg",
+              "price": "105.5"
+            },
+            {
+              "kgs": "250g",
+              "price": "11"
+            },
+            {
+              "kgs": "500g",
+              "price": "25.76"
+            }
+          ],
+          "imagess": [
+            {
+              "image": "./images/capci.webp"
+            },
+            {
+              "image": "./images/capci1.webp"
+            },
+            {
+              "image": "./images/capci2.webp"
+            },
+            {
+              "image": "./images/freshooo.webp"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "image": "./images/carrot.webp",
+          "title": "Carrot - Orange(Loose)",
+          "price": "72",
+          "kgs":"1 kg",
+          "category": "vegitables",
+          "type":"fresho",
+          "packsizes": [
+            {
+              "kgs": "1kg",
+              "price": "72"
+            },
+            {
+              "kgs": "250g",
+              "price": "11"
+            },
+            {
+              "kgs": "500g",
+              "price": "25.76"
+            }
+          ],
+          "imagess":[{
+             "image": "./images/carrot.webp"
+          }]
+        },
+        {
+          "id": 2,
+          "image": "./images/califlower.webp",
+          "title": "Cauliflower",
+          "price": "32",
+          "type":"fresho",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        },
+        {
+          "id": 3,
+          "image": "./images/coriander.webp",
+          "title": "Coriander Leaves",
+          "price": "172",
+          "type":"fresho",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        },
+        {
+          "id": 4,
+          "image": "./images/cucumber.webp",
+          "title": "Cucumber",
+          "price": "490",
+          "type":"fresho",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        },
+        {
+          "id": 5,
+          "image": "./images/ladysfinger.webp",
+          "title": "Lady's Finger(Loose)",
+          "price": "68",
+          "type":"fresho",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        },
+        {
+          "id": 6,
+          "image": "./images/onion.webp",
+          "title": "Onion",
+          "price": "190",
+          "type":"fresho",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        },
+        {
+          "id": 7,
+          "image": "./images/potato.webp",
+          "title": "Potato",
+          "type":"fresho",
+          "price": "138.7",
+          "category": "vegitables",
+          "packsizes":[],
+          "imagess":[]
+        }
+      ],
+      "id": "f07f"
+    }, 
+    {
+      "fru_veg": [
+        {
+          "id": 1,
+          "lis": "Cuts & Sprouts"
+        },
+        {
+          "id": 2,
+          "lis": "Exotic Fruits & Veggies"
+        },
+        {
+          "id": 3,
+          "lis": "Fresh Fruits"
+        },
+        {
+          "id": 4,
+          "lis": "Herbs & seasonings"
+        },
+        {
+          "id": 5,
+          "lis": "Organic Fruits & Vegitables"
+        }
+      ],
+      "id": "60f0"
+    },
+    {
+      "pack_size": [
+        {
+          "id": 1,
+          "pack": "Combo 5 items"
+        },
+        {
+          "id": 2,
+          "pack": "Combo 4 items"
+        },
+        {
+          "id": 3,
+          "pack": "Combo 3 items"
+        },
+        {
+          "id": 4,
+          "pack": "Combo 2 items"
+        },
+        {
+          "id": 5,
+          "pack": "Approx 500 g 1 pack"
+        },
+        {
+          "id": 6,
+          "pack": "9 kg"
+        },
+        {
+          "id": 7,
+          "pack": "800 gm"
+        },
+        {
+          "id": 8,
+          "pack": "80 g"
+        },
+        {
+          "id": 9,
+          "pack": "8 pcs"
+        },
+        {
+          "id": 10,
+          "pack": "8 kg"
+        }
+      ],
+      "id": "24f0"
+    },
+    {
+      "shopBy": [
+        {
+          "id": 1,
+          "names": "Frozen Veg Snacks"
+        },
+        {
+          "id": 2,
+          "names": "Frozen Vegetables"
+        },
+        {
+          "id": 3,
+          "names": "Frozen Non-Veg Snacks"
+        },
+        {
+          "id": 4,
+          "names": "Frozen Indian Breads"
+        },
+        {
+          "id": 5,
+          "names": "Other Veg Pickle"
+        },
+        {
+          "id": 6,
+          "names": "Non Veg Pickle"
+        },
+        {
+          "id": 7,
+          "names": "Soups"
+        },
+        {
+          "id": 8,
+          "names": "Heat & Eat Ready Meals"
+        },
+        {
+          "id": 9,
+          "names": "Breakfast & Snack Mixes"
+        },
+        {
+          "id": 10,
+          "names": "Dessert Mixes"
+        }
+      ]
+     
+    }
+  ],
+  "fruits": [
+    {
+      "data": [
+        {
+          "id": 8,
+          "name": "bananna",
+          "title": "Banana - Robosta",
+          "image": "./images/bananna.webp",
+          "category": "fruits",
+          "price": "59",
+          "kgs":"1kg",
+          "type": "fresho!",
+          "packsizes": [],
+          "imagess":[]
+        },
+        {
+          "id": 9,
+          "name": "apple",
+          "title": "Apple - Royal Gala Economy",
+          "image": "./images/apple.webp",
+          "category": "fruits",
+          "price": "150",
+          "type": "fresho!",
+          "packsizes": [],
+          "imagess":[]
+        },
+        {
+          "id": 10,
+          "name": "grapes",
+          "title": "Grapes - Green sonaka",
+          "image": "/images/grapes.webp",
+          "category": "fruits",
+          "price": "59",
+          "kgs":"",
+          "packsizes": [],
+          "imagess":[]
+        },
+        {
+          "id": 11,
+          "name": "papaya",
+          "title": "Papaya-medium",
+          "image": "./images/apple.webp",
+          "category": "fruits",
+          "price": "46",
+          "packsizes": [],
+          "imagess":[]
+        },
+        {
+          "id": 12,
+          "name": "watermelon",
+          "title": "Watermelon - medium",
+          "image": "./images/watermelon.webp",
+          "category": "fruits",
+          "price": "61",
+          "select": {
+            "option1": "grapes"
+          },
+          "packsizes": [],
+          "imagess":[]
+        }
+      ],
+      "id": "d0e4"
+    },
+    {
+      "fru_veg": [
+        {
+          "id": 1,
+          "lis": "Cuts & Sprouts"
+        },
+        {
+          "id": 2,
+          "lis": "Exotic Fruits & Veggies"
+        },
+        {
+          "id": 3,
+          "lis": "Fresh Fruits"
+        },
+        {
+          "id": 4,
+          "lis": "Herbs & seasonings"
+        },
+        {
+          "id": 5,
+          "lis": "Organic Fruits & Vegitables"
+        }
+      ],
+      "id": "60f0"
+    },
+    {
+      "pack_size": [
+        {
+          "id": 1,
+          "pack": "Combo 5 items"
+        },
+        {
+          "id": 2,
+          "pack": "Combo 4 items"
+        },
+        {
+          "id": 3,
+          "pack": "Combo 3 items"
+        },
+        {
+          "id": 4,
+          "pack": "Combo 2 items"
+        },
+        {
+          "id": 5,
+          "pack": "Approx 500 g 1 pack"
+        },
+        {
+          "id": 6,
+          "pack": "9 kg"
+        },
+        {
+          "id": 7,
+          "pack": "800 gm"
+        },
+        {
+          "id": 8,
+          "pack": "80 g"
+        },
+        {
+          "id": 9,
+          "pack": "8 pcs"
+        },
+        {
+          "id": 10,
+          "pack": "8 kg"
+        }
+      ],
+      "id": "24f0"
+    },
+    {
+      "shopBy": [
+        {
+          "id": 1,
+          "names": "Seasonal Fruits"
+        },
+        {
+          "id": 2,
+          "names": "Apples & Promogranate"
+        },
+        {
+          "id": 3,
+          "names": "Kiwi,melon,Citrus fruits "
+        },
+        {
+          "id": 4,
+          "names": "Banana, Sapota & Papaya"
+        },
+        {
+          "id": 5,
+          "names": "Mangoes"
+        },
+        {
+          "id": 6,
+          "names": "Fruit Baskets"
+        },
+        {
+          "id": 7,
+          "names": "Exotic Fruits"
+        },
+        {
+          "id": 8,
+          "names": "Exotic Vegetables"
+        },
+        {
+          "id": 9,
+          "names": "Cut Fruit, Tender Coconut"
+        },
+        {
+          "id": 10,
+          "names": "Fresh Salads & Sprouts"
+        }
+      ],
+      "id": "970d"
+    }
+  ],
+  "dipers": [
+    {
+      "data": [
+        {
+          "id": 13,
+          "brand": "Littles",
+          "image": "./images/pamp1.webp",
+          "title": "Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin E",
+          "price": "280.93",
+          "category": "dipers"
+        },
+        {
+          "id": 14,
+          "brand": "Pampers",
+          "image": "./images/pamp2.webp",
+          "title": "Baby Wipes - With Alone",
+          "price": "348.6",
+          "category": "dipers"
+        },
+        {
+          "id": 15,
+          "brand": "Bigbasket",
+          "image": "./images/pamp3.webp",
+          "title": "Baby Wipes - Sea Breeze , No paraben, Double Moisturizing",
+          "price": "420",
+          "category": "dipers"
+        },
+        {
+          "id": 16,
+          "brand": "Littles",
+          "image": "./images/pamp4.webp",
+          "title": "Baby Diaper Pants -XL, With Wetness Indicator & 12 Hours",
+          "price": "569.69",
+          "category": "dipers"
+        },
+        {
+          "id": 17,
+          "brand": "Bigbasket",
+          "image": "./images/pamp5.webp",
+          "title": "Baby Wipes - Fresh , No paraben, Double Moisturizing",
+          "price": "210",
+          "category": "dipers"
+        },
+        {
+          "id": 18,
+          "brand": "Littles",
+          "image": "./images/pamp6.webp",
+          "title": "Baby Wipes With - Added with Aloe Vera, Jojoba Oil  Vitamin E",
+          "price": "86",
+          "category": "dipers"
+        },
+        {
+          "id": 19,
+          "brand": "Chicco",
+          "image": "./images/pamp7.webp",
+          "title": "Baby Moments - Soft Cleansing Wipes With Aloe Vera",
+          "price": "75",
+          "category": "dipers"
+        },
+        {
+          "id": 20,
+          "brand": "Bigbasket",
+          "image": "./images/pamp8.webp",
+          "title": "Baby Wipes - Cherry Blossom, No Paraben, Double Moisturizing",
+          "price": "210"
+        }
+      ],
+      "id": "6e2e"
+    }
+  ],
+  "tea": [
+    {
+      "data": [
+        {
+          "id":21,
+          "title":"TGL Co. Best Seller Sampler Box Tea Bags Assortment, 20 g (10 Bags x 2 g each)",
+           "image":"./images/tea1.webp",
+           "price":"190",
+           "kgs":"10 bags x 2 g each",
+           "category":"",
+           "images":[
+              {
+                  "image":"./images/tea1.webp"
+              },
+              {
+                  "image":"./images/t1(2).webp"
+              },
+              {
+                  "image":"./images/t1(3).webp"
+              },
+              {
+                  "image":"./images/t1(4).webp"
+              },
+              {
+               "image":"./images/t1(5).webp"
+              }
+          ]
+      },
+      {
+          "id":22,
+          "title":"Red Label Tea, 2x1 kg Multipack",
+          "image":"./images/tea2.webp",
+          "price":"1079",
+          "images":[
+              {
+                  "image":"./images/t2(1).webp"
+              }     
+          ]
+      },
+      {
+          "id":23,
+          "title":"Tata Tea Gold Instant Liquid Ice Tea Premix - Kashmiri Kahwa, 180 ml (10 Sachets x 18 ml)",
+          "image":"./images/tea3.webp",
+          "price":"170",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/tea3.webp"
+              },
+              {
+                  "image":"./images/t3(2).webp"
+              },
+              {
+                  "image":"./images/t3(3).webp"
+              },
+              {
+                  "image":"./images/t3(4).webp"
+              },
+              {
+               "image":"./images/t3(5).webp"
+              }
+          ]
+      },
+      {
+          "id":24,
+          "title":"Taj Mahal Tea",
+          "image":"./images/tea4.webp",
+          "price":"1680",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/tea4.webp"
+              }
+          ]
+      },
+      {
+          "id":25,
+          "title":"Tata Tea Gold Leaf Tea",
+          "image":"./images/tea5.webp",
+          "price":"948",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/tea5.webp"
+              },       
+              {
+                  "image":"./images/t3(2).webp"
+              },
+              {
+                  "image":"./images/t3(3).webp"
+              },
+              {
+                  "image":"./images/t3(4).webp"
+              },
+              {
+               "image":"./images/t3(5).webp"
+              }
+             
+          ]
+      },
+      {
+          "id":26,
+          "title":"Red Label Tea - Natural Care",
+          "image":"./images/tea6.webp",
+          "price":"1100",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/tea6.webp"
+              }
+              
+          ]
+      },
+      {
+          "id":27,
+          "title":"indiSecrets Assorted Tulsi Infusions With 4 Exotic Flavours, 8.5 g (5 N x 1.7 g)",
+          "image":"./images/tea7.webp",
+          "price":"59",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/tea3.webp"
+              },
+              {
+                  "image":"./images/t3(2).webp"
+              },
+              {
+                  "image":"./images/t3(3).webp"
+              },
+              {
+                  "image":"./images/t3(4).webp"
+              },
+              {
+               "image":"./images/t3(5).webp"
+              }
+          ]
+      },
+      {
+          "id":28,
+          "title":"Wagh Bakri Premium Leaf Tea - Strong & Refreshing, 1 kg Pouch",
+          "image":"./images/tea8.webp",
+          "price":"484",
+          "category":"",
+          "images":[
+              {
+                  "image":"./images/t8(1).webp"
+              },
+              {
+                  "image":"./images/t8(2).webp"
+              },
+              {
+                  "image":"./images/t8(3).webp"
+              },
+              {
+                  "image":"./images/t8(4).webp"
+              },
+              {
+               "image":"./images/t8(5).webp"
+              }
+          ]
+      },
+      {
+          "id":29,
+          "title":"Tata Tea Premium Tea",
+          "image":"./images/tea9.webp",
+          "price":"488",
+          "category":"",
+
+          "images":[
+              {
+                  "image":"./images/t9(1).webp"
+              },
+              {
+                  "image":"./images/t9(2).webp"
+              },
+              {
+                  "image":"./images/t9(3).webp"
+              },
+              {
+                  "image":"./images/t9(4).webp"
+              },
+              {
+               "image":"./images/t9(5).webp"
+              }
+          ]
+  
+      }
+      ],
+      "id": "fdb8"
+    }
+  ],
+  "ghee": [
+          {
+            "data":[
+              {
+                "id":30,
+                "title":"fresho!Pure Ghee/Tuppa",
+                "image":"./images/ghee1.webp",
+                "price":"149",
+                "category":"",
+                "images":[
+                    {
+                        "image":"./images/ghee1.webp"
+                    },
+                    {
+                        "image":"./images/g1(2).webp"
+                    },
+                    {
+                        "image":"./images/g1(3).webp"
+                    },
+                    {
+                        "image":"./images/g1(4).webp"
+                    }
+                ]
+           },
+           {
+            "id":31,
+            "title":"Nandini Pure Ghee",
+            "image":"./images/ghee2.webp",
+            "price":"584",
+            "category":"",
+            "images":[
+                {
+                    "image":"./images/ghee2.webp"
+              }]
+            },
+          {
+            "id":32,
+            "title":"bb Popular Desi White Ghee, 200 ml",
+            "image":"images/ghee3.webp",
+            "price":"120",
+            "category":"",
+            "images":[
+                    {
+                        "image":"./images/ghee3.webp"
+                    },
+                    {
+                        "image":"./images/g2(1).webp"
+                    },
+                    {
+                        "image":"./images/g3(2).webp"
+                    },
+                    {
+                        "image":"./images/g3(3).webp"
+                    },
+                    {
+                        "image":"./images/g3(4).webp"
+                    },
+                    {
+                        "image":"./images/g3(5).webp"
+                    }
+                ]
+          
+          },
+          {
+            "id":33,
+            "title":"GRB Ghee",
+            "image":"./images/ghee4.webp",
+            "price":"1516.32",
+            "images":[
+                {
+                    "image":"./images/ghee4.webp"
+              }]
+            
+          },
+          {
+            "id":34,
+            "title":"fresho! Organic Desi Cow Ghee, Slowly Cooked, Rich Aroma, 2x1 L (Multipack)",
+            "image":"./images/ghee5.webp",
+            "price":"1538",
+            "images":[
+                    {
+                        "image":"./images/ghee5.webp"
+                    },
+                    {
+                        "image":"./images/g5(1).webp"
+                    },
+                    {
+                        "image":"./images/g5(2).webp"
+                    },
+                    {
+                        "image":"./images/g5(3).webp"
+                    },
+                    {
+                        "image":"./images/g5(4).webp"
+                    },
+                    {
+                        "image":"./images/g5(5).webp"
+                    }
+                ]
+          },
+          {
+            "id":35,
+            "title":"Aashirvaad Svasti Cow Ghee/Tuppa",
+            "image":"./images/ghee6.webp",
+            "price":"747",
+            "images":[
+                    {
+                        "image":"./images/ghee5.webp"
+                    },
+                    {
+                        "image":"./images/g6(1).webp"
+                    },
+                    {
+                        "image":"./images/g6(2).webp"
+                    },
+                    {
+                        "image":"./images/g6(3).webp"
+                    },
+                    {
+                        "image":"./images/g6(4).webp"
+                    },
+                    {
+                        "image":"./images/g6(5).webp"
+                    },
+                    {
+                        "image":"./images/g6(6).webp"
+                    }
+                ]
+          }
+            ]
+          }
+  ],
+  "nandini": [
+   {
+    "data":[
+      {
+        "id":36,
+        "title":"Nandini Pure Ghee",
+        "image":"./images/nan1.webp",
+        "price":"584",
+        "images":[
+            {
+                "image":"./images/nan1.webp"
+          }]
+    },
+    {
+        "id":37,
+        "title":"Nandini Goodlife - Toned Milk",
+        "image":"./images/nan2.webp",
+        "price":"721.92",
+        "images":[
+            {
+                "image":"./images/nan2.webp"
+          }]
+    },
+    {
+        "id":38,
+        "title":"Nandini Slim UHT Treated",
+        "image":"./images/nan3.webp",
+        "price":"582.8",
+        "images":[
+            {
+                "image":"./images/nan3.webp"
+          },
+          {
+            "image":"./images/na3(1).webp"
+      },
+      {
+        "image":"./images/na3(2).webp"
+  },
+  {
+    "image":"./images/na3(2).webp"
+},
+{
+    "image":"./images/na3(4).webp"
+}
+        
+        ]
+    },
+    {
+        "id":39,
+        "title":"Nandini Butter - Salted",
+        "image":"./images/nan4.webp",
+        "price":"510",
+        "images":[
+            {
+                "image":"./images/nan4.webp"
+          }]
+    },
+    {
+        "id":40,
+        "title":"Nandini Curd",
+        "image":"./images/nan5.webp",
+        "price":"26",
+        "images":[
+            {
+                "image":"./images/nan5.webp"
+          }]
+    },
+    {
+        "id":41,
+        "title":"Nandini Pasteurised Toned Milk",
+        "image":"./images/nan6.webp",
+        "price":"26",
+        "images":[
+            {
+                "image":"./images/nan6.webp"
+          }]
+    }
+    ]
+   }
+  ],
+  "meat":[
+    {
+      "data":[
+        {
+          "id":"1",
+          "title":"fresho! Farm Eggs - Regular, Antibiotic Residue-free, 6 pcs",
+          "image":"./images/meat1.webp",
+          "price":" 45",
+          "images":[
+              {
+                  "image":"./images/meat1.webp"
+            },
+          {
+              "image":"./images/me1(1).webp"
+        }]
+          },
+          {
+              "id":"2",
+          "title":"fresho! Chicken - Curry Cut Without Skin, Antibiotic Residue-Free, 24 To 30 pcs, 1 kg",
+          "image":"./images/meat2.webp",
+          "price":"249",
+          "images":[
+              {
+                  "image":"./images/meat2.webp"
+            },
+          {
+              "image":"./images/me2(1).webp"
+        }]
+          },
+          {
+              "id":"3",
+          "title":"fresho! Chicken Breast - Boneless, Antibiotic Residue-Free, 1 To 2 pcs, 250 g",
+          "image":"./images/meat3.webp",
+          "price":"139",
+          "images":[
+              {
+                  "image":"./images/meat3.webp"
+            },
+          {
+              "image":"./images/me3(1).webp"
+        }]
+          },
+          {
+              "id":"4",
+          "title":"ABHI EGGS Nutri+ with Immunity Boosters, 100% antibiotic free, 6 Pcs",
+          "image":"./images/meat4.webp",
+          "price":"72.03",
+          "images":[
+              {
+                  "image":"./images/meat4.webp"
+            },
+          {
+              "image":"./images/me4(1).webp"
+        },
+        {
+          "image":"./images/me4(2).webp"
+    },
+    {
+      "image":"./images/me4(3).webp"
+   },
+   {
+  "image":"./images/me4(4).webp"
+   },
+ {
+  "image":"./images/me4(5).webp"
+ }
+      
+      
+      ]
+          },
+          {
+              "id":"5",
+          "title":"fresho! Rohu Fish Curry Cut/Bengali Cut, 450 g With Head",
+          "image":"./images/meat5.jpg",
+          "price":"149",
+          "images":[
+              {
+                  "image":"./images/meat5.jpg"
+            },
+          {
+              "image":"./images/me5(1).webp"
+        }]
+
+          },
+          {
+              "id":"6",
+          "title":"fresho! Catla Fish Curry Cut/Bengali Cut, 450 g With Head",
+          "image":"./images/meat6.webp",
+          "price":"149",
+          "images":[
+              {
+                  "image":"./images/meat6.webp"
+            },
+            {
+              "image":"./images/me6.webp"
+        }
+         ]
+          }
+      ]
+    }
+  ],
+  "chicken":[{
+"data":[
+  {
+    "id":"1",
+    "title":"fresho! Chicken - Curry Cut Without Skin, Antibiotic Residue-Free, 24 To 30 pcs, 1 kg",
+    "image":"./images/chick1.webp",
+    "price":"249",
+    "images":[
+        {
+            "image":"./images/chick1.webp"
+      },
+      {
+        "image":"./images/ch1(1).webp"
+  },
+  {
+    "image":"./images/ch1(2).webp"
+ }
+   ]
+
+},
+{
+    "id":"2",
+    "title":"fresho! Chicken Breast - Boneless, Antibiotic Residue-Free, 1 To 2 pcs, 250 g",
+    "image":"./images/chick2.webp",
+    "price":"139" ,
+    "images":[
+        {
+            "image":"./images/chick2.webp"
+        },
+        {
+            "image":"./images/ch2(1).webp"
+        }
+
+        
+    ]
+    
+},
+{
+    "id":"3",
+    "title":"fresho! Chicken - Biryani Cut, 900 g",
+    "image":"./images/chick3.webp",
+    "price":"399" ,
+    "images":[
+        {
+            "image":"./images/chick3.webp"
+        },
+        {
+            "image":"./images/ch3(1).webp"
+        }
+
+        
+    ]
+    
+},
+{
+    "id":"4",
+    "title":"fresho! Chicken - Mince, 900 g",
+    "image":"./images/chick4.webp",
+    "price":"479" ,
+    "images":[
+        {
+            "image":"./images/chick4.webp"
+        },
+        {
+            "image":"./images/ch4(1).webp"
+        },
+        {
+            "image":"./images/ch4(2).webp"
+        }
+        
+
+        
+    ]
+    
+},
+{
+    "id":"5",
+    "title":"fresho! Chicken Drumstick - Without Skin, Antibiotic Residue Free, 8 To 14 pcs, 900 g",
+    "image":"./images/chick5.webp",
+    "price":" 359" ,
+    "images":[
+        {
+            "image":"./images/chick5.webp"
+        },
+        {
+            "image":"./images/ch5(1).webp"
+        }
+
+        
+    ]
+},
+{
+    "id":"6",
+    "title":"fresho! Chilli Chicken Pieces - Boneless, Antibiotic Residue Free, 28 To 34 pcs, 900 g",
+    "image":"./images/chick6.webp",
+    "price":"479" ,
+    "images":[
+        {
+            "image":"./images/chick6.webp"
+        },
+        {
+            "image":"./images/ch6(1).webp"
+        }
+
+        
+    ]
+
+
+  }
+    ]
+  }
+    ],
+    "yogurt":[
+  {
+    "data":[
+      {
+        "id":"1",
+    "title":"Milky Mist Greek Yogurt - Natural, High Protein, No Added Sugar, 100 g",
+    "image":"./images/yog1.webp",
+    "price":" 35" ,
+    "images":[
+        {
+            "image":"./images/yog1.webp"
+        },
+        {
+            "image":"./images/yo1(1).webp.webp"
+        },
+        {
+            "image":"./images/yo1(2).webp.webp"
+        },
+        {
+            "image":"./images/yo1(3).webp.webp"
+        },
+        {
+            "image":"./images/yo1(4).webp.webp"
+        }        
+    ]
+    },
+    {
+        "id":"2",
+    "title":"Epigamia Greek Yogurt - Natural, No Added Sugar, High In Protein, 6x85 g Multipack",
+    "image":"./images/yog2.webp",
+    "price":"306" ,
+    "images":[
+        {
+            "image":"./images/yog2.webp"
+        },
+        {
+            "image":"./images/yo2(1).webp.webp"
+        },
+        {
+            "image":"./images/yo2(2).webp.webp"
+        },
+        {
+            "image":"./images/yo2(3).webp.webp"
+        },
+        {
+            "image":"./images/yo2(4).webp.webp"
+        }        
+    ]
+    },
+    {
+        "id":"3",
+    "title":"Milky Mist Fruit Yoghurt - Mango, Great Source Of Probiotics, Light & Healthy, 100 g",
+    "image":"./images/yog3.webp",
+    "price":"30" ,
+    "images":[
+        {
+            "image":"./images/yog3.webp"
+        },
+        {
+            "image":"./images/yo3(1).webp.webp"
+        },
+        {
+            "image":"./images/yo3(2).webp.webp"
+        },
+        {
+            "image":"./images/yo3(3).webp.webp"
+        },
+        {
+            "image":"./images/yo3(4).webp.webp"
+        }        
+    ]
+    },
+    {
+        "id":"4",
+    "title":"Milky Mist Fruit Yoghurt - Blueberry, 4x100 g Multipack",
+    "image":"./images/yog4.webp",
+    "price":"116" ,
+    "images":[
+        {
+            "image":"./images/yog4.webp"
+        },
+        {
+            "image":"./images/yo4(1).webp.webp"
+        },
+        {
+            "image":"./images/yo4(2).webp.webp"
+        },
+        {
+            "image":"./images/yo4(3).webp.webp"
+        },
+        {
+            "image":"./images/yo4(4).webp.webp"
+        }        
+    ]
+    },
+    {
+        "id":"5",
+    "title":"Milky Mist Fruit Yoghurt - Strawberry, Great Source Of Probiotics, Light & Healthy, 100 g",
+    "image":"./images/yog5.webp",
+    "price":" 30" ,
+    "images":[
+        {
+            "image":"./images/yog5.webp"
+        },
+        {
+            "image":"./images/yo5(1).webp.webp"
+        },
+        {
+            "image":"./images/yo5(2).webp.webp"
+        },
+        {
+            "image":"./images/yo5(3).webp.webp"
+        },
+        {
+            "image":"./images/yo5(4).webp.webp"
+        }        
+    ]
+    },
+    {
+        "id":"6",
+    "title":"Epigamia Greek Yogurt - Strawberry, High In Protein, No Preservatives, 6x85 g Multipack",
+    "image":"./images/yog6.webp",
+    "price":" 280.5" ,
+     "images":[
+        {
+            "image":"./images/yog6.webp"
+        },
+        {
+            "image":"./images/yo6(1).webp.webp"
+        },
+        {
+            "image":"./images/yo6(2).webp.webp"
+        },
+        {
+            "image":"./images/yo6(3).webp.webp"
+        },
+        {
+            "image":"./images/yo6(4).webp.webp"
+        },
+        {
+            "image":"./images/yo6(5).webp.webp"
+        },
+        {
+            "image":"./images/yo6(6).webp.webp"
+        }            
+    ]
+    }
+]
+
+
+}
+
+],
+
+  "userData": [
+    {
+      "id": "e0cc",
+      "uName": "reshma",
+      "email": "reshmashaik22@gmail.com",
+      "pass": "resh@22"
+    },
+    {
+      "id": "8e60",
+      "uName": "guru27",
+      "email": "guruvenkat2709@gmail.com",
+      "pass": "guru@27"
+    },
+    {
+      "id": "7cb4",
+      "uName": "reshma",
+      "email": "reshmashaik22@gmail.com",
+      "pass": "resh@22"
+    },
+    {
+      "id": "2865",
+      "uName": "reshma22",
+      "email": "reshmashaik22@gmail.com",
+      "pass": "resh@22"
+    },
+    {
+      "id": "bdcf",
+      "uName": "guru",
+      "email": "guruvenkat2709@gmail.com",
+      "pass": "guru@27"
+    },
+    {
+      "id": "93e6",
+      "uName": "reshma22",
+      "email": "reshmashaik22@gmail.com",
+      "pass": "resh@22"
+    }
+  ]
+}

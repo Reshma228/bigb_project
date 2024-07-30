@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itemdetails</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav1" style="min-width: 100vw;">
+        <div class="log"><img src="./images/logo.jpeg" onclick="home()" style="cursor: pointer;"></div>
+        <div class="sear"><span class="material-symbols-outlined">
+            search
+            </span><input type="search" placeholder="search" class="search"><button class="st">search</button></div>
+        <div class="more">
+            <button class="location"></button>
+                <button class="cart"><span class="material-symbols-outlined">
+                    shopping_bag
+                    </span>
+                <div class="qu">0</div>
+                </button>
+                <div class="cart-box">
+                    <h3>Cart</h3>
+                       <ul class="producList"></ul>
+                       <div class="cartbuynowbutton">
+                        <button class="buynowbutt" onclick="cartitems()">Buy now</button>
+                        <div class=" checkout">
+                            <div class="total">
+                                <small>subtotal (0 items) </small>0
+                            </div>
+                            <div class="clos">close</div>
+                           </div>
+                       </div>
+                        </div>
+            <button class="profile">
+                <i class="fa-solid fa-user"></i>
+                <div class="profboxnone">
+                    <div class="prof-box"><div><span class="material-symbols-outlined">
+                        account_circle
+                        </span>Username</div>
+                    <div><span class="material-symbols-outlined">
+                        bookmark
+                        </span> Whishlist</div>
+                    <div onclick="logout()"><span class="material-symbols-outlined">
+                        logout
+                        </span> Logout</div></div>
+                </div>
+                
+            </button>
+           
+        </div>
+    </nav>
+    <section class="idpsec">
+<div class="idpsecbox">
+    <div class="idpsecboximag"></div>
+    <div class="indpboxwhy">
+<h3 class="indpboxwhyhead">Why choose Bigbasket </h3>
+<div class="indpboxwhybox">
+    <div class="indpboxwhyboxes">
+        <div><span class="material-symbols-outlined">
+            grocery
+            </span></div>
+        <div><span class="idpwhyspan1">Quality</span>
+        <span>You can trust</span>
+        </div>
+    </div>
+    <div class="indpboxwhyboxes">
+        <div><span class="material-symbols-outlined">
+            schedule
+            </span></div>
+        <div><span class="idpwhyspan1">on time</span>
+        <span>Guarantee</span>
+        </div>
+    </div>
+  
+    <div class="indpboxwhyboxes">
+        <div><span class="material-symbols-outlined">
+            local_shipping
+            </span></div>
+        <div><span class="idpwhyspan1">Free</span>
+        <span>Delivery</span>
+        </div>
+    </div>
+    <div class="indpboxwhyboxes">
+        <div><span class="material-symbols-outlined">
+            policy
+            </span></div>
+        <div><span class="idpwhyspan1">Return Policy</span>
+        <span>No Question asked</span>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="idpsecrating">
+<h3>Rating and Reviews</h3>
+<div class="idpsecratingbox">
+    <div class="idpsecratingboxicon"><span class="material-symbols-outlined">
+        reviews
+        </span></div>
+        <div class="idpsecratingbox1">
+            <span>Want to rate this product</span>
+            <p>You can rate or review this product only after <br> purchasing from bigbasket</p>
+        </div>
+
+</div>
+
+    </div>
+
+
+
+</div>
+    </section>
+    <div class="idpsecrandom">
+<h3>Related category</h3>
+    </div>
+    <footer>
+        <div class="fb1">
+    
+            <div class="fb1box">
+               <h4> Bigbasket</h4>
+    <span>About Us                 </span>
+    <span>Become A bigbasket Rider</span>
+    <span>In News</span>
+    <span>Green bigbasket</span>
+    <span>Privacy Policy</span>
+    <span>Affiliate</span>
+    <span>Terms and Conditions</span>
+    <span>Careers At bigbasket</span>
+    <span>bb Instant</span>
+    <span>bb Daily</span>
+    <span>bb Blog</span>
+    <span>bbnow</span>
+            </div>
+            <div class="fb1box">
+    
+               <h4> Help</h4>
+              <span>  FAQs           </span>
+              <span>  Contact Us</span>
+              <span>  bb Wallet FAQs</span>
+              <span>  bb Wallet T&Cs</span>
+              <span>  Vendor Connect</span>
+    
+            </div>
+            <div class="fb1box">
+            
+            </div>
+        </div>
+        <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+        <div class="fb2">
+            <center><p>Cities We Serve</p></center>
+            <div class="addo">
+                Srirangapatna
+    |
+    Jashpur
+    |
+    North Paravur
+    |
+    Pratapgarh District
+    |
+    Guntakal
+    |
+    Muzaffarnagar District
+    |
+    Meerut District
+    |
+    Ludhiana District
+    |
+    Hooghly District
+    |
+    Gonda District
+    |
+    Fatehgarh Sahib District
+    |
+    Baghpat District
+    |
+    Amroha District
+    |
+    Mahabubnagar
+    |
+    Korba
+    |
+    Varanasi
+    |
+    Kanakapura
+    |
+    Khurai
+    |
+    Raisen
+    |
+    Gondia
+    |
+    Rahatgarh
+    |
+    Bhiwadi
+    |
+    Goa
+    |
+    Bahadurgarh
+    |
+    Raichur
+    |
+    Sindudurg
+    |
+    Sangareddy
+    |
+    Kurnool
+    |
+    Jadcherla
+    |
+    Muzaffarpur
+    |
+    JAGANNATHPRASAD
+    |
+    Hubli
+    |
+    Prakasam
+    |
+    Nalgonda
+    |
+    Karnal
+    |
+    Panipat
+    |
+    Rohtak
+    |
+    Renigunta
+    |
+    Patiala
+    |
+    Trichy
+    |Prakasam District
+    |
+    Haridwar
+    |
+    Vinukonda
+    |
+    Kotagiri
+    |
+    Muthukulathur
+    |
+    Pathapatnam
+    |
+    Haripal
+    |
+    Kodumudi
+    |
+    Sivakasi
+    |
+    Pudukkottai
+    |
+    Narsipatnam
+    |
+    Narasannapeta
+    |
+    Kurupam
+    |
+    Pushpavanam
+    |
+    Chodavaram
+    |
+    Gudalur
+    |
+    Pennadam
+    |
+    Addateegala
+    |
+    Chirala
+    |
+    Yerragonda Palem
+    |
+    Kukanoor
+    |
+    Kushalnagar
+    |
+    Holenarasipur
+    |
+    Madakasira
+    |
+    Kavali
+    |
+    Eedu
+    |
+    Bagalkot
+    |
+    Mahalingpur
+    |
+    Humnabad
+    |
+    Yaragatti
+    |
+    Palani
+    |
+    Chilakaluripet
+    |
+    Chikkamagalur
+    |
+    Narayanpet
+    |
+    Jannaram
+    |
+    Rayaparthi
+    |
+    Panchkula
+    |
+    Metpally
+    |
+    Kodad
+    |
+    Mahadevpur
+    |
+    Rudrangi
+    |
+    Lunglei
+    |
+    Narmetta
+    |
+    Yellareddy
+    |
+    Bhangar
+    |
+    Pattukkottai
+    |
+    Aluva
+    |
+    Kayamkulam
+    |
+    Ezhupunna
+    |
+    Pangodu
+    |
+    Attingal
+    |
+    Edappal
+    |
+    Cherpulassery
+    |
+    chungatra
+    |
+    Koothattukulam
+    |
+    Manjeshwar
+    |
+    Choutuppal
+    |
+    Ladakh
+    |
+    Mananthavadi
+    |
+    Thodupuzha
+    |
+    Kattappana
+    |
+    Vadakara
+    |
+    Kuthuparamba
+    |
+    Sonipat
+    |
+    Thamarassery
+    |
+    Mundakayam
+    |
+    East Kameng
+    |
+    Mogullapally
+    |
+    East Garo Hills
+    |
+    Memari
+    |
+    Bolpur
+    |
+    Bangaon
+    |
+    Habra
+    |
+    Tamluk
+    |
+    Basirhat
+    |
+    Barakar
+    |
+    Chittaranjan
+    |
+    Gohana
+    |
+    Amritsar
+    |
+    West Kameng
+    |
+    West Khasi Hills
+    |
+    West Sikkim
+    |
+    Martur
+    |
+    West Tripura
+    |
+    Allagadda
+    |
+    Kittur
+    |
+    Motebeennura
+    |
+    Haveri
+    |
+    Kalghatgi
+    |
+    Sathupally
+    |
+    Harihara
+    |
+    Gadag
+    |
+    Haliyal
+    |
+    KHALARI-JR
+    |
+    Katol
+    |
+    Kendujhar
+    |
+    KENDRAPARA
+    |
+    Kawardha
+    |
+    Karimganj
+    |
+    Karbi Anglong
+    |
+    Kanker
+    |
+    Khergam
+    |
+    Masrakh
+    |
+    Bakhtiarpur
+    |
+    Hassan
+    |
+    Arambag
+    |
+    Baripada
+    |
+    Soro
+    |
+    Shadnagar
+    |
+    Bhongir
+    |
+    Kazipet
+    |
+    Athani
+    |
+    Vyara
+    |
+    CHHENDIPADA
+    |
+    CHHAPRA
+    |
+    Chatra
+    |
+    Changlang
+    |
+    Howrah
+    |
+    Hooghly
+    |
+    HINJILICUT
+    |
+    CHIKITI
+    |
+    Hosanagar
+    |
+    Malavalli
+    |
+    IMAMGANJ
+    |
+    ILIPUR
+    |
+    Koratagere
+    |
+    Magadi
+    |
+    Madikeri
+    |
+    Dabaspete
+    |
+    South Tripura
+    |
+    SULTANGANJ
+    |
+    South Garo Hills
+    |
+    South Sikkim
+    |
+    SURAJGARHA
+    |
+    Surguja
+    |
+    Sundergarh
+    |
+    Supaul
+    |
+    SWARUPNAGAR
+    |
+    Thoubal
+    |
+    Shorapur
+    |
+    Afzalpur
+    |
+    Chincholi
+    |
+    Dimapur
+    |
+    Jamkhandi
+    |
+    Sullia
+    |
+    Assaigoli
+    |
+    Virajpet
+    |
+    Pandua
+    |
+    Koppal
+    |
+    Jamuria
+    |
+    Khairabad
+    |
+    Byndoor
+    |
+    Vaidpura
+    |
+    Amalapuram
+    |
+    Addanki
+    |
+    Yavatmal
+    |
+    Wardha
+    |
+    Naharlagun
+    |
+    Ranebennur
+    |
+    Shiggaon
+    |
+    Savadatti
+    |
+    Sullurupeta
+    |
+    Makrana
+    |
+    Kuchaman City
+    |
+    Warora
+    |
+    RUNNISAIDPUR
+    |
+    RUNNISAIDPUR
+    |
+    Udham-Singh-Nagar
+    |
+    Nellore
+    |
+    Ambala
+    |
+    Agra
+    |
+    Ramgarh
+    |
+    Sircilla District
+    |
+    South 24 Parganas District
+    |
+    Sultanpur District
+    |
+    Madanpur
+    |
+    Faridabad
+    |
+    Raipur
+    |
+    Saiha
+    |
+    Saharsa
+    |
+    Malur
+    |
+    Hardoi
+    |
+    Darbhanga
+    |
+    Gaya
+    |
+    Motihari
+    |
+    Angul
+    |
+    Chhindwara
+    |
+    Ganjam
+    |
+    Bassi
+    |
+    Hindaun
+    |
+    Lalsot
+    |
+    Karauli
+    |
+    Dausa
+    |
+    Saoner
+    |
+    Gangapur City
+    |
+    Chandrapur
+    |
+    KAMAKHYANAGAR
+    |
+    KALYANI
+    |
+    Kandhamal
+    |
+    Kamrup
+    |
+    Amaravathi
+    |
+    Gwalior
+    |
+    Rajkot
+    |
+    Allahabad
+    |
+    Bareilly
+    |
+    Jodhpur
+    |
+    Palakkad
+    |
+    Palwal
+    |
+    Kalinga Nagar
+    |
+    Chinhat
+    |
+    Ottapidaram
+    |
+    Sriperumbudur
+    |
+    Thuckalay
+    |
+    Mayiladuthurai
+    |
+    Vilathikulam
+    |
+    llikkad|Neyyattinkara|Haripad|Shahabad Markanda|Bhagpat|Srinaga|
+            </div>
+         </div>
+        </div>
+        <p style="color: white;">....................................................................................................................................................................................................................................................................</p>
+        <div class="fb3">
+            <div class="fb3-b">
+                <h5>Popular Categories</h5>
+               <span> Sunflower Oils   </span>
+               <span> Milk</span>
+               <span> Organic F&V</span>
+               <span> Floor Cleaners</span>
+               <span> Frozen Veg Food</span>
+            </div>
+            <div class="fb3-b">
+    
+    <span>
+    Wheat Atta</span>
+    <span>
+        Health Drinks
+        </span>
+    <span>
+        Namkeen</span>
+    <span>Other Juices</span>
+    <span>
+        Diapers & Wipes</span>
+                
+            </div>
+            <div class="fb3-b">
+    
+    
+                <span>Ghee</span>
+                <span>Flakes</span>
+                <span>Eggs</span>
+                <span>Leaf vegetables</span>
+            </div>
+            <div class="fb3-b">
+                <h5>Popular Brands</h5>
+                <span>Amul</span>
+                <span>RED BULL</span>
+                <span>Yummiez</span>
+                <span>Beitannia</span>
+                <span>Haldiram's</span>
+            </div>
+            <div class="fb3-b">
+    <span>Nescafe</span>
+    <span>Elite Cake</span>
+    <span>Yera</span>
+    <span>wow! momo</span>
+    <span>Ferrero</span>
+            </div>
+            <div class="fb3-b">
+                <span>MTR</span>
+                <span>Pediasure</span>
+                <span>Yakult</span>
+                <span>Fortune</span>
+                <span>Lays</span>
+            </div>
+        </div>
+        <div class="copy">
+           <p>Powered  by @<b>Reshma Shaik</b></p>
+        </div>
+    </footer>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+const home=()=>{
+    location.assign("./home.html")
+}
+
+
+let url = "http://localhost:3000/";
+let sear = document.querySelector(".search");
+
+// Function to perform search
+const search = async (val) => {
+    try {
+        const response = await fetch(url + `${val}`);
+        const result3 = await response.json();
+        console.log(result3);
+        
+        // Store data in localStorage
+        let str = JSON.stringify(result3);
+        window.localStorage.setItem("mydata", str);
+        
+        // Redirect to itemspage.html
+        window.location.assign("./itemspage.html");
+        console.log("searched");
+    } catch (error) {
+        console.error('Error during search:', error);
+    }
+};
+
+// Click event listener for the search button
+let st = document.querySelector(".st");
+st.addEventListener("click", () => {
+    search(sear.value);
+});
+
+// Keypress event listener for the input field to trigger search on Enter key press
+sear.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        search(sear.value);
+    }
+});
+
+var locationdata=JSON.parse(localStorage.getItem("latlong"))
+console.log(locationdata)
+let locationbut=document.querySelector(".location")
+console.log(locationbut)
+
+locationbut.innerHTML=`<span class="locationcode">${locationdata.results[0].address_components[8].long_name}</span>
+<span class="locationplace">${locationdata.results[0].address_components[4].long_name},${locationdata.results[0].address_components[6].long_name}</span>
+`
+
+
+
+
+        let   profboxnone=document.querySelector(".profboxnone")
+        let  profile=document.querySelector(".profile")
+           let click=1 
+           profile.addEventListener("click",()=>{
+               if(click==1){
+                    profboxnone.style.display="block"
+                   console.log("opened");
+           click=0
+               }else{
+                    profboxnone.style.display="none"
+                   console.log("closed");
+                   click=1
+               }
+           })
+
+
+
+
+
+        let bo = document.querySelector("body");
+        let twobox_2 = document.querySelector(".twobox-2");
+        let cart = document.querySelector(".cart");
+        let closee = document.querySelector(".clos");
+        let quantity = document.querySelector(".qu");
+        let total = document.querySelector(".total");
+        let producLists = document.querySelector(".producList");
+        
+        let checkOutList = JSON.parse(localStorage.getItem("cart")) || {};
+        
+        // Parse single item from localStorage
+        let single = JSON.parse(localStorage.getItem("singleitem"));
+        console.log(single);
+        console.log(single.packsizes);
+        console.log(single.id)
+        let idpsec = document.querySelector(".idpsec");
+        
+        let idpsecbox = document.querySelector(".idpsecbox");
+        console.log(idpsecbox);
+        
+        let idpsecboximag = document.querySelector(".idpsecboximag");
+        let idpsecboximagff = document.createElement("div");
+        idpsecboximagff.classList.add("idpsecboximagff");
+        
+        // Create image elements for each image in imagess array
+        single.imagess.forEach((item,key) => {
+            let idpsecboximagffboxes = document.createElement("div");
+            idpsecboximagffboxes.classList.add("idpsecboximagffboxes");
+        
+            let idpsecboximagffboxesimg = document.createElement("img");
+            idpsecboximagffboxesimg.setAttribute("src", item.image);
+            idpsecboximagffboxesimg.classList.add("idpsecboximagffboxesimg");
+        
+            idpsecboximagffboxes.appendChild(idpsecboximagffboxesimg);
+            idpsecboximagff.appendChild(idpsecboximagffboxes);
+        });
+        
+        let idpsecboximagfirst = document.createElement("div");
+        idpsecboximagfirst.classList.add("idpsecboximagfirstimg");
+        
+        let idpsecboximagfirstimag = document.createElement("img");
+        idpsecboximagfirstimag.classList.add("idpsecboximagfirstimag");
+        idpsecboximagfirstimag.setAttribute("src", single.image);
+        
+        idpsecboximagfirst.appendChild(idpsecboximagfirstimag);
+        
+        let idpsecboximagmiddle = document.createElement("div");
+        idpsecboximagmiddle.classList.add("idpsecboximagmiddle");
+        
+        // Populate middle section with item details
+        idpsecboximagmiddle.innerHTML = `
+            <div class="idpsecboximagmiddlediv1">${single.type}</div>
+            <div class="idpsecboximagmiddletitle">
+                <span>${single.title}</span> , 
+                <div class="titleprice">${single.kgs}</div>
+            </div>
+        `;
+        
+        let idpsecboximagmiddleprice = document.createElement("div");
+        idpsecboximagmiddleprice.classList.add("idpsecboximagmiddleprice");
+        idpsecboximagmiddleprice.innerHTML = `
+            <span class="idpsecboximagmiddleprice1">Price : </span>₹ 
+            <span class="idpsecboximagmiddleprice2">${single.price}</span>
+        `;
+        
+        let idpsecboximagmiddlebuttons = document.createElement("div");
+        idpsecboximagmiddlebuttons.classList.add("idpsecboximagmiddlebuttons");
+        
+        let idpsecboximagmiddleAddtocart = document.createElement("button");
+        idpsecboximagmiddleAddtocart.classList.add("idpsecboximagmiddleAddtocart");
+        idpsecboximagmiddleAddtocart.innerHTML = "Add To Cart";
+
+        idpsecboximagmiddleAddtocart.setAttribute("onclick",`addToCart(${single.id})`)
+        let idpsecboximagmiddlesavetolater = document.createElement("button");
+        idpsecboximagmiddlesavetolater.classList.add("idpsecboximagmiddlesavetolater");
+        idpsecboximagmiddlesavetolater.innerHTML = `
+            <span class="material-symbols-outlined">bookmark</span>Save To Later
+        `;
+        
+        let idpsecboximagmiddlepacksizes = document.createElement("div");
+        idpsecboximagmiddlepacksizes.classList.add("idpsecboximagmiddlepacksizes");
+        idpsecboximagmiddlepacksizes.innerHTML = "<h4>Pack sizes</h4>";
+        
+        let idpsecboximagmiddlepacksizesboxes = document.createElement("div");
+        idpsecboximagmiddlepacksizesboxes.classList.add("idpsecboximagmiddlepacksizesboxes");
+        
+        // Populate pack sizes section with options
+        single.packsizes.forEach((item) => {
+            let idpsecboximagmiddlepacksizesboxesinner = document.createElement("div");
+            idpsecboximagmiddlepacksizesboxesinner.innerHTML = `
+                <span value="${item.kgs}" class="kgsitems">${item.kgs}</span>
+                <span>${item.price}</span>
+            `;
+            idpsecboximagmiddlepacksizesboxesinner.classList.add("idpsecboximagmiddlepacksizesboxesinner");
+            idpsecboximagmiddlepacksizesboxes.appendChild(idpsecboximagmiddlepacksizesboxesinner);
+        });
+        
+        idpsecboximagmiddlepacksizes.appendChild(idpsecboximagmiddlepacksizesboxes);
+        
+        idpsecboximagmiddlebuttons.appendChild(idpsecboximagmiddleAddtocart);
+        idpsecboximagmiddlebuttons.appendChild(idpsecboximagmiddlesavetolater);
+        idpsecboximag.appendChild(idpsecboximagff);
+        idpsecboximag.appendChild(idpsecboximagfirst);
+        idpsecboximag.appendChild(idpsecboximagmiddle);
+        idpsecboximagmiddle.appendChild(idpsecboximagmiddleprice);
+        idpsecboximagmiddle.appendChild(idpsecboximagmiddlebuttons);
+        idpsecboximagmiddle.appendChild(idpsecboximagmiddlepacksizes);
+        
+        // Event listener for changing main image when clicking on thumbnail images
+        let idpsecboximagfirstimags = document.querySelector(".idpsecboximagfirstimag");
+        let idpsecboximagffboxesimgs = document.querySelectorAll(".idpsecboximagffboxesimg");
+        
+        for (let res = 0; res < idpsecboximagffboxesimgs.length; res++) {
+            idpsecboximagffboxesimgs[res].addEventListener("click", () => {
+                idpsecboximagfirstimags.setAttribute("src", single.imagess[res].image);
+            });
+        }
+        
+        // Event listener for changing title and price when clicking on pack sizes
+        let titleprice = document.querySelector(".titleprice");
+        let idpsecboximagmiddleprice1 = document.querySelector(".idpsecboximagmiddleprice2");
+        let kgsitems = document.querySelectorAll(".kgsitems");
+        
+        for (let hg = 0; hg < kgsitems.length; hg++) {
+            kgsitems[hg].addEventListener("click", () => {
+                titleprice.innerHTML = single.packsizes[hg].kgs;
+                idpsecboximagmiddleprice1.innerHTML = single.packsizes[hg].price;
+            });
+        }
+        
+        // Retrieve random data from localStorage
+        let randomdataa = JSON.parse(localStorage.getItem("randomdata"));
+        console.log(randomdataa);
+        
+        // Populate random section with items
+        let idpsecrandom = document.querySelector(".idpsecrandom");
+        let idpsecrandombox = document.createElement("div");
+        idpsecrandombox.classList.add("idpsecrandombox");
+        
+        randomdataa.forEach((item, key) => {
+            let idpsecrandomboxitem = document.createElement("div");
+            idpsecrandomboxitem.classList.add("idpsecrandomboxitem");
+        
+            let idpsecrandomboxitemimg = document.createElement("img");
+            idpsecrandomboxitemimg.setAttribute("src", item.image);
+            idpsecrandomboxitemimg.addEventListener("click", () => {
+                localStorage.setItem("singleitem", JSON.stringify(item));
+                location.assign("./itemdetailspage.html");
+                randomdata()
+            });
+            idpsecrandomboxitemimg.classList.add("idpsecrandomboxitemimg");
+        
+            let idpsecrandomboxitemtitle = document.createElement("div");
+            idpsecrandomboxitemtitle.classList.add("idpsecrandomboxitemtitle");
+            idpsecrandomboxitemtitle.innerHTML = `
+                <span>${item.type}</span>
+                <p>${item.title}</p>
+            `;
+        
+            let idpsecrandomboxitemselect = document.createElement("div");
+            idpsecrandomboxitemselect.classList.add("idpsecrandomboxitemselect");
+        
+            let idpsecrandomboxitemselectbox = document.createElement("select");
+            idpsecrandomboxitemselectbox.classList.add("idpsecrandomboxitemselectbox");
+        
+           item.packsizes.forEach((item,key) => {
+               let idpsecrandomboxitemselectboxoption = document.createElement("option");
+               idpsecrandomboxitemselectboxoption.innerHTML = `${item.kgs}`;
+               idpsecrandomboxitemselectbox.appendChild(idpsecrandomboxitemselectboxoption);
+           });
+        
+            let idpsecrandomboxitemselectprice = document.createElement("span");
+            idpsecrandomboxitemselectprice.classList.add("idpsecrandomboxitemselectprice");
+            idpsecrandomboxitemselectprice.innerHTML = `<b>Price : </b>₹ ${item.price}`;
+        
+            idpsecrandomboxitemselect.appendChild(idpsecrandomboxitemselectbox);
+            idpsecrandomboxitemselect.appendChild(idpsecrandomboxitemselectprice);
+        
+            let idpsecrandomboxitembutt = document.createElement("div");
+            idpsecrandomboxitembutt.classList.add("idpsecrandomboxitembutt");
+        
+            let idpsecrandomboxitembutt1 = document.createElement("button");
+            idpsecrandomboxitembutt1.classList.add("two-but1");
+            idpsecrandomboxitembutt1.innerHTML = `
+                <span class="material-symbols-outlined">bookmark</span>
+            `;
+        
+            let idpsecrandomboxitembutt2 = document.createElement("button");
+            idpsecrandomboxitembutt2.classList.add("two-but2");
+            idpsecrandomboxitembutt2.setAttribute('onclick', `addToCart(${key})`);
+            idpsecrandomboxitembutt2.innerHTML = "Add To Cart";
+        
+            idpsecrandomboxitembutt.appendChild(idpsecrandomboxitembutt1);
+            idpsecrandomboxitembutt.appendChild(idpsecrandomboxitembutt2);
+        
+            idpsecrandomboxitem.appendChild(idpsecrandomboxitemimg);
+            idpsecrandomboxitem.appendChild(idpsecrandomboxitemtitle);
+            idpsecrandomboxitem.appendChild(idpsecrandomboxitemselect);
+            idpsecrandomboxitem.appendChild(idpsecrandomboxitembutt);
+        
+            idpsecrandombox.appendChild(idpsecrandomboxitem);
+        });
+        
+        idpsecrandom.appendChild(idpsecrandombox);
+        
+        // Retrieve mydata from localStorage
+        let myData = JSON.parse(localStorage.getItem("mydata"));
+        console.log(myData);
+        
+        // Generate random data and store it in localStorage
+        function randomdata() {
+            if (myData && myData[0] && myData[0].data) {
+
+            let fpi = [];
+            let remainingDa = [...myData[0].data];
+        
+            for (let i = 0; i < 4 && remainingDa.length>0 ; i++) {
+                let randomIndex = Math.floor(Math.random() * remainingDa.length);
+                let selectedProduct = remainingDa[randomIndex];
+                fpi.push(selectedProduct);
+                remainingDa.splice(randomIndex, 1);
+            }
+        
+            localStorage.setItem("randomdata", JSON.stringify(fpi));
+            console.log(fpi);
+        }
+        }
+        
+        // Function to add item to cart
+        function addToCart(id) {
+            // Ensure id is numeric
+            console.log(id)
+            id = parseInt(id);
+            let itemToAdd;
+            if (single && single.id === id) {
+                itemToAdd = single;
+            } else if (randomdataa && randomdataa[id]) {
+                itemToAdd = randomdataa[id];
+            }
+        
+            if (itemToAdd) {
+              
+                if (!checkOutList[id]) {
+                    checkOutList[id] = { ...itemToAdd, quantity: 1 };
+                } else {
+                    checkOutList[id].quantity += 1;
+                }
+            
+            // Save the updated cart to localStorage
+            saveCartToLocalStorage();
+            
+            // Reload the cart display
+            reloadCart();
+            }
+        }
+        
+        // Function to update cart quantity
+        function changeQuantity(key, quantity) {
+            key = parseInt(key);
+            if (checkOutList[key]) {
+                if (quantity === 0) {
+                    delete checkOutList[key];
+                } else {
+                    checkOutList[key].quantity = quantity;
+                }
+            saveCartToLocalStorage();
+            reloadCart();
+            }
+        }
+        
+        // Function to save cart to localStorage
+        function saveCartToLocalStorage() {
+            for (let key in checkOutList) {
+                if (checkOutList[key] === null || checkOutList[key] === undefined) {
+                    delete checkOutList[key];
+                }
+            }
+            localStorage.setItem('cart', JSON.stringify(checkOutList));
+        }
+        
+        // Function to reload cart display
+        function reloadCart() {
+            producLists.innerHTML = "";
+            let counts = 0;
+            let totalPrice = 0;
+        
+            // Iterate over checkOutList and populate cart display
+            Object.keys(checkOutList).forEach((key) => {
+                let item = checkOutList[key];
+                if (item !== null && item !== undefined) { 
+                counts += item.quantity;
+                totalPrice += parseInt(item.price) * item.quantity;
+        
+                let li7 = document.createElement("li");
+                li7.classList.add("cartli");
+                li7.innerHTML = `
+                    <img src="${item.image}">
+                    <div>${item.title}</div>
+                    <div>${item.price}</div>
+                    <div class="cartbuttons">
+                        <button onclick="changeQuantity(${key},${item.quantity - 1})">-</button>
+                        <div class="counts">${item.quantity}</div>
+                        <button onclick="changeQuantity(${key},${item.quantity + 1})">+</button>
+                    </div>
+                `;
+                producLists.appendChild(li7);
+                }
+            });
+        
+            total.innerHTML = `<small>subtotal (${counts} items)</small> ₹ ${totalPrice}`;
+            quantity.innerHTML = counts;
+        }
+        
+        // Event listener for displaying cart modal
+        cart.addEventListener("click", () => {
+            bo.classList.add("active");
+        });
+        
+        // Event listener for hiding cart modal
+        closee.addEventListener("click", () => {
+            bo.classList.remove("active");
+        });
+        
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            let cartData = localStorage.getItem('cart');
+            if (cartData) {
+                checkOutList = JSON.parse(cartData);
+                reloadCart();
+            }
+        });
+        
+        const cartitems=()=>{
+            window.location.assign("./cartitemsshowing.html")
+        }
+        
+        
+
+  </script>
+</body>
+</html>
